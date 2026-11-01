@@ -76,6 +76,9 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - **호체기조**: Raises a barrier for 5 seconds that ignores all damage and status effects.
 - **방어 (Block)**: Pushes back the enemies in front; you take no damage during the move.
 - **점파운관**: At chain 8 or more, spends the whole chain and thrusts forward, dealing that much damage.
+- **운소뇌정벽력도**: Cuts with the basic attack's first swing while lightning falls on a fan ahead, dealing damage and paralysis and breaking balance.
+- **풍뢰신각**: At chain 4 or more, spends the whole chain and charges forward in a flying kick.
+- **비천각**: Leaps like the 飛天 elite, then drops with the foot pointed at the foe.
 
 </details>
 
