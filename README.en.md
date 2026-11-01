@@ -41,6 +41,41 @@ To remove it, delete the `BepInEx\plugins\Battle3D` folder. Settings are stored 
 
 The control scheme can be changed from the keyboard-settings button of the in-battle pause menu.
 
+<details>
+<summary><b>Configuration file</b></summary>
+
+`BepInEx\config\mortal.battle3d.cfg` — created after the first run. Edit it with a text editor while the game is closed.
+
+| Key | Default | Description |
+|---|---|---|
+| `[General] Enabled` | `true` | Use the 3D battle at all (off: every battle is the original). Also toggled in the F4 panel. |
+| `[General] ExcludedBattles` | `""` | Battle codes (without `BL_`, comma separated) that stay the original 2D battle; every other battle is 3D. Example: `1000,0001` |
+| `[Controls] Scheme` | `Mouse` | Control scheme: `Mouse` / `ClickMove` / `Keyboard` |
+| `[Controls] AutoAim` | `true` | Auto-aim onto enemies (also toggled with Left Ctrl in battle) |
+| `[Skills] Slot1Key ~ Slot4Key` | `q, e, r, f` | Keys of skill slots 1–4 (Input System key names) |
+| `[Skills] RememberLoadout` | `true` | Keep Johwal's skill slots for the next battles |
+| `[Player] WalkSpeedScale` | `1.5` | Base walking pace scale |
+| `[Player] SprintMultiplier` | `2` | Run speed (a multiple of the walking pace) |
+| `[Player] AttackSpeed` | `1.7` | Playback speed of attack motions |
+| `[Player] ThrowCooldown` | `0.6` | Seconds between throws (right click) |
+| `[Player] ThrowAnimSpeed` | `2.5` | Playback speed of the throw motion |
+| `[Player] RollDuration` | `0.95` | Seconds a roll takes |
+| `[Player] RollDistance` | `4.6` | Metres a roll covers |
+| `[Player] RollInvulnerable` | `1` | Fraction of the roll that ignores hits (1 = the whole roll) |
+| `[Camera] Pitch` | `35` | Camera pitch (degrees) |
+| `[Camera] Yaw` | `45` | Camera yaw (degrees) |
+| `[Camera] Distance` | `23` | Default camera distance (mouse wheel zooms) |
+| `[Graphics] PostProcessing` | `true` | Bloom, colour grading and vignette |
+| `[Graphics] Intro` | `true` | The camera diving through the clouds when a battle starts |
+| `[Graphics] ToonShader` | `true` | Toon shading (off: plain URP shading) |
+| `[Graphics] Outline` | `true` | Outline of characters and weapons |
+| `[Sound] CustomVolume` | `1` | Volume (0–1) of the mod's own sound effects (Audio folder) |
+| `[Sound] BasicSwingVolume` | `0.7` | Extra volume factor (0–1) for the swing sound of Johwal's and Usome's basic attacks |
+
+The file also has balance values and per-event sound keys; see the comments inside.
+
+</details>
+
 ## Troubleshooting
 Open `BepInEx\LogOutput.log` first. When the mod is running it writes lines starting with `[Battle 3D]`. Please attach this file when reporting a problem.
 

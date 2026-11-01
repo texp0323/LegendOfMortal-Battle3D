@@ -40,6 +40,41 @@
 
 조작 방식은 전투 중 일시정지 메뉴의 키보드 설정 버튼에서 변경할 수 있습니다.
 
+<details>
+<summary><b>설정 파일</b></summary>
+
+`BepInEx\config\mortal.battle3d.cfg` — 게임을 한 번 실행하면 생성됩니다. 게임을 종료한 상태에서 메모장 등으로 수정하십시오.
+
+| 항목 | 기본값 | 설명 |
+|---|---|---|
+| `[General] Enabled` | `true` | 3D 전투 사용 여부 (끄면 모든 전투가 원본). F4 패널에서도 켜고 끌 수 있습니다. |
+| `[General] ExcludedBattles` | `""` | 원본 2D 전투로 남길 전투 코드 (`BL_` 제외, 쉼표로 구분). 나머지 전투는 모두 3D입니다. 예: `1000,0001` |
+| `[Controls] Scheme` | `Mouse` | 조작 방식: `Mouse` / `ClickMove` / `Keyboard` |
+| `[Controls] AutoAim` | `true` | 적 자동 조준 (전투 중 왼쪽 Ctrl로도 전환) |
+| `[Skills] Slot1Key ~ Slot4Key` | `q, e, r, f` | 스킬 슬롯 1~4의 키 (Input System 키 이름) |
+| `[Skills] RememberLoadout` | `true` | 조활의 스킬 장착을 다음 전투에도 유지 |
+| `[Player] WalkSpeedScale` | `1.5` | 기본 걸음 속도 배율 |
+| `[Player] SprintMultiplier` | `2` | 달리기 속도 (걸음 속도의 배수) |
+| `[Player] AttackSpeed` | `1.7` | 공격 모션 재생 속도 |
+| `[Player] ThrowCooldown` | `0.6` | 암기(우클릭) 사이 대기 시간 (초) |
+| `[Player] ThrowAnimSpeed` | `2.5` | 암기 던지기 모션 재생 속도 |
+| `[Player] RollDuration` | `0.95` | 구르기 시간 (초) |
+| `[Player] RollDistance` | `4.6` | 구르기 거리 (m) |
+| `[Player] RollInvulnerable` | `1` | 구르기 중 무적 비율 (1 = 구르는 동안 내내) |
+| `[Camera] Pitch` | `35` | 카메라 기울기 (도) |
+| `[Camera] Yaw` | `45` | 카메라 회전 (도) |
+| `[Camera] Distance` | `23` | 기본 카메라 거리 (마우스 휠로 확대·축소) |
+| `[Graphics] PostProcessing` | `true` | 블룸·색 보정·비네트 |
+| `[Graphics] Intro` | `true` | 전투 입장 시 하늘에서 구름을 뚫고 내려오는 연출 |
+| `[Graphics] ToonShader` | `true` | 툰 셰이딩 (끄면 일반 URP 셰이딩) |
+| `[Graphics] Outline` | `true` | 캐릭터·무기 외곽선 |
+| `[Sound] CustomVolume` | `1` | 모드 효과음(Audio 폴더) 음량 (0~1) |
+| `[Sound] BasicSwingVolume` | `0.7` | 조활·우소매 기본 공격 휘두르는 소리의 추가 음량 배율 (0~1) |
+
+이 밖에 전투 균형 값과 효과음별 지정 항목이 있으며, 파일 안의 주석을 참고하십시오.
+
+</details>
+
 ## 문제 해결
 먼저 `BepInEx\LogOutput.log` 를 열어 확인하십시오. 모드가 정상적으로 실행되면 `[Battle 3D]` 로 시작하는 줄이 기록됩니다. 문제를 문의하실 때는 이 파일을 함께 첨부해 주십시오.
 

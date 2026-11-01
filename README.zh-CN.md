@@ -40,6 +40,41 @@
 
 操作方式可在战斗中暂停菜单的键盘设置按钮里切换。
 
+<details>
+<summary><b>配置文件</b></summary>
+
+`BepInEx\config\mortal.battle3d.cfg` — 首次运行后生成。请在游戏关闭时用文本编辑器修改。
+
+| 项目 | 默认值 | 说明 |
+|---|---|---|
+| `[General] Enabled` | `true` | 是否使用 3D 战斗（关闭则所有战斗为原版）。也可在 F4 面板中开关。 |
+| `[General] ExcludedBattles` | `""` | 保持原版 2D 的战斗代码（不含 `BL_`，用逗号分隔），其余战斗均为 3D。例：`1000,0001` |
+| `[Controls] Scheme` | `Mouse` | 操作方式：`Mouse` / `ClickMove` / `Keyboard` |
+| `[Controls] AutoAim` | `true` | 自动瞄准敌人（战斗中也可用左 Ctrl 切换） |
+| `[Skills] Slot1Key ~ Slot4Key` | `q, e, r, f` | 技能栏 1~4 的按键（Input System 按键名） |
+| `[Skills] RememberLoadout` | `true` | 下一场战斗继续沿用主角的技能栏装备 |
+| `[Player] WalkSpeedScale` | `1.5` | 基础步行速度倍率 |
+| `[Player] SprintMultiplier` | `2` | 奔跑速度（步行速度的倍数） |
+| `[Player] AttackSpeed` | `1.7` | 攻击动作播放速度 |
+| `[Player] ThrowCooldown` | `0.6` | 暗器（右键）间隔秒数 |
+| `[Player] ThrowAnimSpeed` | `2.5` | 暗器投掷动作播放速度 |
+| `[Player] RollDuration` | `0.95` | 翻滚时长（秒） |
+| `[Player] RollDistance` | `4.6` | 翻滚距离（米） |
+| `[Player] RollInvulnerable` | `1` | 翻滚中无敌的比例（1 = 整个翻滚期间） |
+| `[Camera] Pitch` | `35` | 镜头俯角（度） |
+| `[Camera] Yaw` | `45` | 镜头水平角（度） |
+| `[Camera] Distance` | `23` | 默认镜头距离（鼠标滚轮缩放） |
+| `[Graphics] PostProcessing` | `true` | 泛光、色彩校正、暗角 |
+| `[Graphics] Intro` | `true` | 进入战斗时镜头从天空穿过云层降下的演出 |
+| `[Graphics] ToonShader` | `true` | 卡通着色（关闭则为普通 URP 着色） |
+| `[Graphics] Outline` | `true` | 角色与武器描边 |
+| `[Sound] CustomVolume` | `1` | 模组自带音效（Audio 文件夹）的音量（0~1） |
+| `[Sound] BasicSwingVolume` | `0.7` | 主角与右小梅普通攻击挥动声的额外音量倍率（0~1） |
+
+文件中还有战斗平衡数值和各事件音效项，请参考文件内的注释。
+
+</details>
+
 ## 常见问题
 请先打开 `BepInEx\LogOutput.log`。模组运行时会写入以 `[Battle 3D]` 开头的行。反馈问题时请附上这个文件。
 
