@@ -90,8 +90,6 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - **풍뢰신각**: At chain 4 or more, spends the whole chain and charges forward in a flying kick. Damage is the finisher's damage × 0.45 × chain.
 - **비천각**: Jumps, then slams down.
 
-Since no place to obtain 풍뢰신각 and 비천각 in the story has been found, they count as learned in battles entered from the F4 panel.
-
 </details>
 
 <details>
