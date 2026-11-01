@@ -44,7 +44,7 @@
 请先打开 `BepInEx\LogOutput.log`。模组运行时会写入以 `[Battle 3D]` 开头的行。反馈问题时请附上这个文件。
 
 <details>
-<summary><b>模组没有启动（日志里没有 `[Battle 3D]` 行）</b></summary>
+<summary><b>模组没有启动（日志里没有 <code>[Battle 3D]</code> 行）</b></summary>
 
 - 如果根本没有 `BepInEx\LogOutput.log`，说明 BepInEx 没有运行。请确认游戏文件夹（`Mortal.exe` 旁边）里有 `winhttp.dll`、`doorstop_config.ini` 和 `BepInEx` 文件夹。（请重新做安装的第 1、2 步。）
 - 检查文件位置。下面四项必须都在 `BepInEx\plugins\Battle3D\` 里：`Battle3D.dll`、`battle3d.bundle`、`battle3d_environment.bundle`、`Audio` 文件夹。不能多套一层（`Battle3D\Battle3D\...`）。
@@ -64,7 +64,7 @@
 </details>
 
 <details>
-<summary><b>出现 `file ... is corrupted! Position out of bounds` 之类的错误并闪退</b></summary>
+<summary><b>出现 <code>file ... is corrupted! Position out of bounds</code> 之类的错误并闪退</b></summary>
 
 - 这是因为 `battle3d.bundle` 或 `battle3d_environment.bundle` 没有下载完整，或者在游戏运行时被覆盖。请完全关闭游戏，重新下载 zip 并覆盖。（两个资源包分别约 70 MB 和 56 MB。）
 

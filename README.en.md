@@ -45,7 +45,7 @@ The control scheme can be changed from the keyboard-settings button of the in-ba
 Open `BepInEx\LogOutput.log` first. When the mod is running it writes lines starting with `[Battle 3D]`. Please attach this file when reporting a problem.
 
 <details>
-<summary><b>The mod doesn't start (no `[Battle 3D]` lines in the log)</b></summary>
+<summary><b>The mod doesn't start (no <code>[Battle 3D]</code> lines in the log)</b></summary>
 
 - If `BepInEx\LogOutput.log` doesn't exist at all, BepInEx isn't running. Check that the game folder (next to `Mortal.exe`) has `winhttp.dll`, `doorstop_config.ini` and the `BepInEx` folder. (Redo install steps 1 and 2.)
 - Check the file locations. All four must be inside `BepInEx\plugins\Battle3D\`: `Battle3D.dll`, `battle3d.bundle`, `battle3d_environment.bundle` and the `Audio` folder. There must not be an extra level (`Battle3D\Battle3D\...`).
@@ -65,7 +65,7 @@ Open `BepInEx\LogOutput.log` first. When the mod is running it writes lines star
 </details>
 
 <details>
-<summary><b>An error like `file ... is corrupted! Position out of bounds` and the game closes</b></summary>
+<summary><b>An error like <code>file ... is corrupted! Position out of bounds</code> and the game closes</b></summary>
 
 - This happens when `battle3d.bundle` or `battle3d_environment.bundle` was not fully downloaded, or was overwritten while the game was running. Close the game completely, download the zip again and overwrite. (The two bundles are about 70 MB and 56 MB.)
 

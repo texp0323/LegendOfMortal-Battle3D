@@ -44,7 +44,7 @@
 먼저 `BepInEx\LogOutput.log` 를 열어 확인하십시오. 모드가 정상적으로 실행되면 `[Battle 3D]` 로 시작하는 줄이 기록됩니다. 문제를 문의하실 때는 이 파일을 함께 첨부해 주십시오.
 
 <details>
-<summary><b>게임을 실행해도 모드가 켜지지 않습니다 (로그에 `[Battle 3D]` 줄이 없음)</b></summary>
+<summary><b>게임을 실행해도 모드가 켜지지 않습니다 (로그에 <code>[Battle 3D]</code> 줄이 없음)</b></summary>
 
 - `BepInEx\LogOutput.log` 파일 자체가 없다면 BepInEx가 실행되지 않은 것입니다. 게임 폴더(`Mortal.exe` 옆)에 `winhttp.dll`, `doorstop_config.ini`, `BepInEx` 폴더가 있는지 확인하십시오. (설치 1, 2번을 다시 진행해 보십시오.)
 - 파일 위치를 확인하십시오. 다음 네 항목이 모두 `BepInEx\plugins\Battle3D\` 안에 있어야 합니다: `Battle3D.dll`, `battle3d.bundle`, `battle3d_environment.bundle`, `Audio` 폴더. 폴더가 한 단계 더 들어가 있으면(`Battle3D\Battle3D\...`) 인식되지 않습니다.
@@ -64,7 +64,7 @@
 </details>
 
 <details>
-<summary><b>`file ... is corrupted! Position out of bounds` 와 같은 오류가 표시되며 게임이 종료됩니다</b></summary>
+<summary><b><code>file ... is corrupted! Position out of bounds</code> 와 같은 오류가 표시되며 게임이 종료됩니다</b></summary>
 
 - `battle3d.bundle` 또는 `battle3d_environment.bundle` 이 완전히 내려받아지지 않았거나, 게임이 실행 중인 상태에서 덮어쓰기가 이루어진 경우 발생합니다. 게임을 완전히 종료한 뒤 zip을 다시 내려받아 덮어쓰십시오. (번들 두 개의 크기는 각각 약 70 MB, 56 MB입니다.)
 
