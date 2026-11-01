@@ -72,10 +72,8 @@ Open `BepInEx\LogOutput.log` first. When the mod is running it writes lines star
 - If a game update changes the original code, the mod may stop fitting. Check for a newer release, and if there isn't one, open an issue with your log.
 
 ## License / terms of use
-Copyright © texp0323. All rights reserved.
+Free for anyone to use under the [MIT License](LICENSE).
 
-This mod may be used freely for **personal, non-commercial purposes**. The following are prohibited without the copyright holder's prior written permission:
-- Redistribution, including re-uploading the release files to other sites or repositories
-- Modification and creation of derivative works, including those based on decompiled code
-
-This is an unofficial fan-made mod and is not affiliated with the game's developer. No original game data is included as files; it is read at run time. The mod is provided "as is", without warranty of any kind, and the author accepts no responsibility for problems arising from its use.
+- The license applies only to the code and content created by the author. Third-party assets included in the release files remain under their respective owners' terms, and the game Legend of Mortal and its data belong to its developer.
+- This is an unofficial fan-made mod and is not affiliated with the game's developer. No original game data is included as files; it is read at run time.
+- The mod is provided "as is", without warranty of any kind.
