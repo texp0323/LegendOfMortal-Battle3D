@@ -35,6 +35,54 @@ To remove it, delete the `BepInEx\plugins\Battle3D` folder. Settings are stored 
 The control scheme can be changed from the keyboard-settings button of the in-battle pause menu.
 
 <details>
+<summary><b>Johwal's skills</b></summary>
+
+- **분력난격**: A flurry of slashes stronger than the basic attack; it builds the chain like the basic attack does.
+- **호체기조**: Raises a barrier for 5 seconds that ignores all damage and status effects.
+- **방어 (Block)**: Pushes back the enemies in front; you take no damage during the move.
+- **점파운관**: At chain 8 or more, spends the whole chain and thrusts forward, dealing that much damage.
+
+</details>
+
+<details>
+<summary><b>Passives</b></summary>
+
+Shown at the upper right of the ready screen and gone once the fight starts.
+
+- **삽답유성검**: With the chain at 0, the next basic attack deals triple damage.
+- **사상전**: The fight starts with a chain already built; higher levels start higher.
+- **서여림**: Stamina recovers more each time it regenerates, scaling with the 전술 (tactics) level.
+- **사초침**: A thrown hidden weapon that hits has a 30% chance to throw the target off balance.
+
+</details>
+
+<details>
+<summary><b>Ally skills</b></summary>
+
+Techniques of the companions you call by equipping their skill on the ready screen.
+
+- **대사형**: Drops from the sky, spins while throwing daggers, drops bombs and leaves.
+- **이사형**: Throws poison vials that leave poison behind.
+- **사사형**: Gathers the coins on the field, throws them and drops healing potions.
+- **소사매**: Clones dash into enemies and slash with daggers; she finishes by cutting through.
+- **엽운주**: Six horizontal dash slashes with a long sword.
+- **용상**: Drops in and dashes twice at random enemies, slashing.
+- **상관형**: Throws coin darts and cuts with a sword.
+- **옥죽**: Throws weapons or summons carts to sweep enemies away.
+
+</details>
+
+<details>
+<summary><b>Bosses and special enemies</b></summary>
+
+- **석공원**: Charges at the very start, then walks in to swing or throws stones and knives. Has super armor.
+- **단하자**: A four-hit slashing combo with two weapons, hitting all around.
+- **우소매**: Mixes combos with jump attacks and dash slashes, and keeps pace with Johwal.
+- All bosses have super armor, so attacks hardly push them back.
+
+</details>
+
+<details>
 <summary><b>Configuration file</b></summary>
 
 `BepInEx\config\mortal.battle3d.cfg` — created after the first run. Edit it with a text editor while the game is closed.
