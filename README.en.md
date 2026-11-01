@@ -69,6 +69,13 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - Settings panel: F4
 - Hide the controls list: F11
 
+**Lightness (Qinggong): roll, dash and movement speed**
+
+- Press Space to **roll with Lightness below 25** or **dash with Lightness at 25 or above**. Both require stamina.
+- The base movement speed multiplier from Lightness is **`1 + max(0, Lightness) × 0.0005`**. Each point adds 0.05%: Lightness 25 gives **1.0125×**, 50 gives **1.025×**, and 100 gives **1.05×**.
+- Maximum dash distance is **`3 + (Lightness - 25) × 0.06` m**: **3 m** at 25, **4.5 m** at 50, and **7.5 m** at 100. Aiming at a nearby cursor shortens the dash, with a minimum distance of 1 m.
+- A roll has a base distance of **4.6 m** and a full duration of **0.95 seconds**, regardless of Lightness. The movement speed multiplier above applies to normal movement.
+
 <details>
 <summary><b>Johwal's skills</b></summary>
 
