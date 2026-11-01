@@ -6,8 +6,6 @@ A BepInEx mod that turns the group battles of **Legend of Mortal** into newly bu
 The original battle scene is only read for its data (units, stats, rules, UI, sounds); the 3D world is created from scratch.
 Battles you don't pick stay as the original.
 
-> This repository holds the documentation and the release zip only; the source code is not published.
-
 ## Features
 - Group battles in a quarter-view 3D: new maps (cliff plateau, town, indoor and more), per-school character models, toon shading with outlines
 - The original's data is used as is: unit layout, HP / attack / stamina, hidden weapons (straight and lobbed throws), status effects (poison, paralysis), special battle rules
