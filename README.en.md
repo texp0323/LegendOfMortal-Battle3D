@@ -69,8 +69,6 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - Settings panel: F4
 - Hide the controls list: F11
 
-The skill keys can be changed with `[Skills] Slot1Key ~ Slot4Key` in the config file (for the Mouse scheme).
-
 <details>
 <summary><b>Johwal's skills</b></summary>
 

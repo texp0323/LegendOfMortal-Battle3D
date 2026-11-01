@@ -68,8 +68,6 @@
 - 设置面板：F4
 - 隐藏操作列表：F11
 
-技能按键可在配置文件的 `[Skills] Slot1Key ~ Slot4Key` 中修改（针对 Mouse 方式）。
-
 <details>
 <summary><b>主角的技能</b></summary>
 

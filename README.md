@@ -68,8 +68,6 @@
 - 설정 패널: F4
 - 조작 목록 숨기기: F11
 
-스킬 키는 설정 파일의 `[Skills] Slot1Key ~ Slot4Key`로 바꿀 수 있습니다(Mouse 방식 기준).
-
 <details>
 <summary><b>조활의 스킬</b></summary>
 
