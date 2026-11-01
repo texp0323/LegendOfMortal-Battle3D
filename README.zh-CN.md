@@ -106,20 +106,6 @@
 </details>
 
 <details>
-<summary><b>没有声音 / 声音太大</b></summary>
-
-- 在 `F4` 面板的声音项里调整。也请确认 `Audio` 文件夹在 `Battle3D` 文件夹里。
-
-</details>
-
-<details>
-<summary><b>画面太暗或太卡</b></summary>
-
-- 在 `F4` 面板的画面项里关闭卡通着色 / 描边，或在配置文件里把 `[Graphics] PostProcessing` 改为 `false`。
-
-</details>
-
-<details>
 <summary><b>想把设置恢复默认</b></summary>
 
 - 关闭游戏，删除 `BepInEx\config\mortal.battle3d.cfg`。下次启动时会按默认值重新生成。

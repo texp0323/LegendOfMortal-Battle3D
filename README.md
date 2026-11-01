@@ -106,20 +106,6 @@
 </details>
 
 <details>
-<summary><b>소리가 나지 않거나 너무 큽니다</b></summary>
-
-- `F4` 설정 패널의 소리 항목에서 조절하십시오. `Audio` 폴더가 `Battle3D` 폴더 안에 있는지도 확인하십시오.
-
-</details>
-
-<details>
-<summary><b>화면이 너무 어둡거나 느립니다</b></summary>
-
-- `F4` 패널의 그래픽 항목에서 툰 셰이딩·외곽선을 끄거나, 설정 파일에서 `[Graphics] PostProcessing` 을 `false` 로 변경해 보십시오.
-
-</details>
-
-<details>
 <summary><b>설정을 초기화하고 싶습니다</b></summary>
 
 - 게임을 종료한 뒤 `BepInEx\config\mortal.battle3d.cfg` 를 삭제하십시오. 다음 실행 시 기본값으로 다시 생성됩니다.

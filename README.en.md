@@ -107,20 +107,6 @@ Open `BepInEx\LogOutput.log` first. When the mod is running it writes lines star
 </details>
 
 <details>
-<summary><b>No sound / too loud</b></summary>
-
-- Adjust it in the sound section of the `F4` panel. Also check that the `Audio` folder is inside the `Battle3D` folder.
-
-</details>
-
-<details>
-<summary><b>Too dark or slow</b></summary>
-
-- Turn off toon shading / outline in the graphics section of the `F4` panel, or set `[Graphics] PostProcessing` to `false` in the config file.
-
-</details>
-
-<details>
 <summary><b>Reset the settings</b></summary>
 
 - Close the game and delete `BepInEx\config\mortal.battle3d.cfg`. It is recreated with the defaults at the next start.
