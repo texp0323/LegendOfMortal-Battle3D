@@ -7,11 +7,7 @@ The original battle scene is only read for its data (units, stats, rules, UI, so
 Battles you don't pick stay as the original.
 
 ## About
-The brawls of the jianghu unfold in a quarter-view 3D. Newly crafted battlefields, warriors in the garb of their own schools, toon shading and ink-bold outlines come together, while the numbers and rules — headcount, vitality and stamina, hidden weapons, status effects — follow the original's decree as is.
-
-Become the hero Johwal and wield the blade yourself. Step through the footwork, unleash the three-hit combo, hurl hidden weapons and roll clear of danger — and build up your chain to burst out with the strike **Jeompa Un-gwan (점파운관)**. The passives 삽답유성검, 사상전, 서여림 and 사초침 lend their strength, and the skills you equip carry over to the next battle.
-
-The `F4` panel tunes sound, view, controls and graphics to your liking, and lets you leap straight into any fight by its battle code.
+A mod that turns the group battles of Legend of Mortal into newly built 3D fights. You control Johwal directly, while units, numbers and rules follow the original data.
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
