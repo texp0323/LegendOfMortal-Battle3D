@@ -19,7 +19,13 @@
 
 卸载只需删除 `BepInEx\plugins\Battle3D` 文件夹。设置保存在 `BepInEx\config\mortal.battle3d.cfg`（可以删除）。
 
-## 操作（默认：鼠标）
+## 操作
+
+操作方式有三种，默认为 Mouse。可在战斗中暂停菜单的键盘设置按钮里切换。
+
+<details>
+<summary><b>Mouse（默认）</b></summary>
+
 | 动作 | 按键 |
 |---|---|
 | 移动 | W A S D |
@@ -27,11 +33,42 @@
 | 暗器 | 鼠标右键（长按为抛射） |
 | 翻滚 / 冲刺 | Space |
 | 技能 1~4 | Q E R F |
-| 自动瞄准开 / 关 | 左 Ctrl |
-| 设置面板 | F4 |
-| 隐藏操作列表 | F11 |
 
-操作方式可在战斗中暂停菜单的键盘设置按钮里切换。
+</details>
+
+<details>
+<summary><b>ClickMove</b></summary>
+
+| 动作 | 按键 |
+|---|---|
+| 移动 | 鼠标右键（按住持续跟随），S 原地停下 |
+| 攻击（三连击） | 鼠标左键 |
+| 暗器 | F（长按为抛射） |
+| 翻滚 / 冲刺 | Space |
+| 技能 1~4 | Q W E R |
+
+</details>
+
+<details>
+<summary><b>Keyboard</b></summary>
+
+| 动作 | 按键 |
+|---|---|
+| 移动 | 方向键 |
+| 攻击（三连击） | Z |
+| 暗器 | X（长按为抛射） |
+| 翻滚 / 冲刺 | Space |
+| 技能 1~4 | A S D C |
+
+</details>
+
+**通用**
+
+- 自动瞄准开 / 关：左 Ctrl
+- 设置面板：F4
+- 隐藏操作列表：F11
+
+技能按键可在配置文件的 `[Skills] Slot1Key ~ Slot4Key` 中修改（针对 Mouse 方式）。
 
 <details>
 <summary><b>主角的技能</b></summary>

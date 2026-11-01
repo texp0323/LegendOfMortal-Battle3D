@@ -19,7 +19,13 @@
 
 제거하려면 `BepInEx\plugins\Battle3D` 폴더를 삭제하십시오. 설정은 `BepInEx\config\mortal.battle3d.cfg`에 저장되며, 이 파일은 삭제해도 무방합니다.
 
-## 조작 (기본: Mouse)
+## 조작
+
+조작 방식은 세 가지이며, 기본은 Mouse입니다. 전투 중 일시정지 메뉴의 키보드 설정 버튼에서 바꿀 수 있습니다.
+
+<details>
+<summary><b>Mouse (기본)</b></summary>
+
 | 동작 | 키 |
 |---|---|
 | 이동 | W A S D |
@@ -27,11 +33,42 @@
 | 암기 | 우클릭 (길게 누르면 포물선 포사) |
 | 구르기 / 대시 | Space |
 | 스킬 1~4 | Q E R F |
-| 자동 조준 켜기·끄기 | 왼쪽 Ctrl |
-| 설정 패널 | F4 |
-| 조작 목록 숨기기 | F11 |
 
-조작 방식은 전투 중 일시정지 메뉴의 키보드 설정 버튼에서 변경할 수 있습니다.
+</details>
+
+<details>
+<summary><b>ClickMove</b></summary>
+
+| 동작 | 키 |
+|---|---|
+| 이동 | 우클릭 (누르고 있으면 계속 따라감), S로 제자리 멈춤 |
+| 공격 (3연격) | 좌클릭 |
+| 암기 | F (길게 누르면 포물선 포사) |
+| 구르기 / 대시 | Space |
+| 스킬 1~4 | Q W E R |
+
+</details>
+
+<details>
+<summary><b>Keyboard</b></summary>
+
+| 동작 | 키 |
+|---|---|
+| 이동 | 방향키 |
+| 공격 (3연격) | Z |
+| 암기 | X (길게 누르면 포물선 포사) |
+| 구르기 / 대시 | Space |
+| 스킬 1~4 | A S D C |
+
+</details>
+
+**공통**
+
+- 자동 조준 켜기·끄기: 왼쪽 Ctrl
+- 설정 패널: F4
+- 조작 목록 숨기기: F11
+
+스킬 키는 설정 파일의 `[Skills] Slot1Key ~ Slot4Key`로 바꿀 수 있습니다(Mouse 방식 기준).
 
 <details>
 <summary><b>조활의 스킬</b></summary>

@@ -20,7 +20,13 @@ A mod that turns the group battles of Legend of Mortal into newly built 3D fight
 
 To remove it, delete the `BepInEx\plugins\Battle3D` folder. Settings are stored in `BepInEx\config\mortal.battle3d.cfg` (safe to delete).
 
-## Controls (default: Mouse)
+## Controls
+
+There are three control schemes; the default is Mouse. Change it from the keyboard-settings button of the in-battle pause menu.
+
+<details>
+<summary><b>Mouse (default)</b></summary>
+
 | Action | Key |
 |---|---|
 | Move | W A S D |
@@ -28,11 +34,42 @@ To remove it, delete the `BepInEx\plugins\Battle3D` folder. Settings are stored 
 | Throw | Right click (hold for a lobbed throw) |
 | Roll / dash | Space |
 | Skills 1–4 | Q E R F |
-| Auto-aim on / off | Left Ctrl |
-| Settings panel | F4 |
-| Hide the controls list | F11 |
 
-The control scheme can be changed from the keyboard-settings button of the in-battle pause menu.
+</details>
+
+<details>
+<summary><b>ClickMove</b></summary>
+
+| Action | Key |
+|---|---|
+| Move | Right click (hold to keep following); S stops in place |
+| Attack (3-hit combo) | Left click |
+| Throw | F (hold for a lobbed throw) |
+| Roll / dash | Space |
+| Skills 1–4 | Q W E R |
+
+</details>
+
+<details>
+<summary><b>Keyboard</b></summary>
+
+| Action | Key |
+|---|---|
+| Move | Arrow keys |
+| Attack (3-hit combo) | Z |
+| Throw | X (hold for a lobbed throw) |
+| Roll / dash | Space |
+| Skills 1–4 | A S D C |
+
+</details>
+
+**Common**
+
+- Auto-aim on / off: Left Ctrl
+- Settings panel: F4
+- Hide the controls list: F11
+
+The skill keys can be changed with `[Skills] Slot1Key ~ Slot4Key` in the config file (for the Mouse scheme).
 
 <details>
 <summary><b>Johwal's skills</b></summary>
