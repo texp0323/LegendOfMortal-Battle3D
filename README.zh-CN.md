@@ -137,7 +137,7 @@
 | `[Graphics] ToonShader` | `true` | 卡通着色（关闭则为普通 URP 着色） |
 | `[Graphics] Outline` | `true` | 角色与武器描边 |
 | `[Sound] CustomVolume` | `1` | 模组自带音效（Audio 文件夹）的音量（0~1） |
-| `[Sound] BasicSwingVolume` | `0.7` | 主角与右小梅普通攻击挥动声的额外音量倍率（0~1） |
+| `[Sound] BasicSwingVolume` | `0.7` | 主角普通攻击挥动声的额外音量倍率（0~1） |
 
 </details>
 

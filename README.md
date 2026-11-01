@@ -137,7 +137,7 @@
 | `[Graphics] ToonShader` | `true` | 툰 셰이딩 (끄면 일반 URP 셰이딩) |
 | `[Graphics] Outline` | `true` | 캐릭터·무기 외곽선 |
 | `[Sound] CustomVolume` | `1` | 모드 효과음(Audio 폴더) 음량 (0~1) |
-| `[Sound] BasicSwingVolume` | `0.7` | 조활·우소매 기본 공격 휘두르는 소리의 추가 음량 배율 (0~1) |
+| `[Sound] BasicSwingVolume` | `0.7` | 조활 기본 공격 휘두르는 소리의 추가 음량 배율 (0~1) |
 
 </details>
 

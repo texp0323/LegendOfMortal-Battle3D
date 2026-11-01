@@ -138,7 +138,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 | `[Graphics] ToonShader` | `true` | Toon shading (off: plain URP shading) |
 | `[Graphics] Outline` | `true` | Outline of characters and weapons |
 | `[Sound] CustomVolume` | `1` | Volume (0–1) of the mod's own sound effects (Audio folder) |
-| `[Sound] BasicSwingVolume` | `0.7` | Extra volume factor (0–1) for the swing sound of Johwal's and Usome's basic attacks |
+| `[Sound] BasicSwingVolume` | `0.7` | Extra volume factor (0–1) for the swing sound of Johwal's basic attacks |
 
 </details>
 
