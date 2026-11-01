@@ -6,15 +6,12 @@ A BepInEx mod that turns the group battles of **Legend of Mortal** into newly bu
 The original battle scene is only read for its data (units, stats, rules, UI, sounds); the 3D world is created from scratch.
 Battles you don't pick stay as the original.
 
-## Features
-- Group battles in a quarter-view 3D: new maps (cliff plateau, town, indoor and more), per-school character models, toon shading with outlines
-- The original's data is used as is: unit layout, HP / attack / stamina, hidden weapons (straight and lobbed throws), status effects (poison, paralysis), special battle rules
-- Direct control: WASD move, left click 3-hit combo, right click throw, Space roll / dash, Q E R F skills. Three control schemes (mouse / click-to-move / keyboard)
-- A **chain** system and the skill **Jeompa Un-gwan (점파운관)** (usable at chain 8+)
-- Passives: 삽답유성검, 사상전, 서여림, 사초침 (shown at the upper right of the ready screen, faded out when the fight starts)
-- Johwal's own skill slots are remembered for the next battles
-- Ally and enemy skills, boss patterns, sound effects, visual effects
-- **F4 settings panel**: sound, camera, controls, graphics (toon shading, outline), and entering a battle directly by its code
+## About
+Group battles unfold in a quarter-view 3D. They are drawn on newly built maps with per-school character models, toon shading and outlines, while the numbers and rules — unit layout, HP and stamina, hidden weapons, status effects — follow the original data as is.
+
+You fight by controlling Johwal directly: movement, the 3-hit combo, throws, rolls and skills, with mouse or keyboard. A chain system lets you build up chain hits to unleash the skill **Jeompa Un-gwan (점파운관)**, and the passives 삽답유성검, 사상전, 서여림 and 사초침 add to it. The skills you equip are kept for the next battles.
+
+The `F4` settings panel adjusts sound, camera, controls and graphics, and lets you enter any battle directly by its code.
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
