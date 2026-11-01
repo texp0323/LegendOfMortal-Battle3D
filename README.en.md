@@ -7,11 +7,11 @@ The original battle scene is only read for its data (units, stats, rules, UI, so
 Battles you don't pick stay as the original.
 
 ## About
-Group battles unfold in a quarter-view 3D. They are drawn on newly built maps with per-school character models, toon shading and outlines, while the numbers and rules — unit layout, HP and stamina, hidden weapons, status effects — follow the original data as is.
+The brawls of the jianghu unfold in a quarter-view 3D. Newly crafted battlefields, warriors in the garb of their own schools, toon shading and ink-bold outlines come together, while the numbers and rules — headcount, vitality and stamina, hidden weapons, status effects — follow the original's decree as is.
 
-You fight by controlling Johwal directly: movement, the 3-hit combo, throws, rolls and skills, with mouse or keyboard. A chain system lets you build up chain hits to unleash the skill **Jeompa Un-gwan (점파운관)**, and the passives 삽답유성검, 사상전, 서여림 and 사초침 add to it. The skills you equip are kept for the next battles.
+Become the hero Johwal and wield the blade yourself. Step through the footwork, unleash the three-hit combo, hurl hidden weapons and roll clear of danger — and build up your chain to burst out with the strike **Jeompa Un-gwan (점파운관)**. The passives 삽답유성검, 사상전, 서여림 and 사초침 lend their strength, and the skills you equip carry over to the next battle.
 
-The `F4` settings panel adjusts sound, camera, controls and graphics, and lets you enter any battle directly by its code.
+The `F4` panel tunes sound, view, controls and graphics to your liking, and lets you leap straight into any fight by its battle code.
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
@@ -51,14 +51,6 @@ The control scheme can be changed from the keyboard-settings button of the in-ba
 | `[Controls] AutoAim` | `true` | Auto-aim onto enemies (also toggled with Left Ctrl in battle) |
 | `[Skills] Slot1Key ~ Slot4Key` | `q, e, r, f` | Keys of skill slots 1–4 (Input System key names) |
 | `[Skills] RememberLoadout` | `true` | Keep Johwal's skill slots for the next battles |
-| `[Player] WalkSpeedScale` | `1.5` | Base walking pace scale |
-| `[Player] SprintMultiplier` | `2` | Run speed (a multiple of the walking pace) |
-| `[Player] AttackSpeed` | `1.7` | Playback speed of attack motions |
-| `[Player] ThrowCooldown` | `0.6` | Seconds between throws (right click) |
-| `[Player] ThrowAnimSpeed` | `2.5` | Playback speed of the throw motion |
-| `[Player] RollDuration` | `0.95` | Seconds a roll takes |
-| `[Player] RollDistance` | `4.6` | Metres a roll covers |
-| `[Player] RollInvulnerable` | `1` | Fraction of the roll that ignores hits (1 = the whole roll) |
 | `[Camera] Pitch` | `35` | Camera pitch (degrees) |
 | `[Camera] Yaw` | `45` | Camera yaw (degrees) |
 | `[Camera] Distance` | `23` | Default camera distance (mouse wheel zooms) |
@@ -68,8 +60,6 @@ The control scheme can be changed from the keyboard-settings button of the in-ba
 | `[Graphics] Outline` | `true` | Outline of characters and weapons |
 | `[Sound] CustomVolume` | `1` | Volume (0–1) of the mod's own sound effects (Audio folder) |
 | `[Sound] BasicSwingVolume` | `0.7` | Extra volume factor (0–1) for the swing sound of Johwal's and Usome's basic attacks |
-
-The file also has balance values and per-event sound keys; see the comments inside.
 
 </details>
 
