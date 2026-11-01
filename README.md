@@ -9,11 +9,14 @@
 활협전의 단체전을 새로 제작한 3D 전투로 바꿔 주는 모드입니다. 주인공 조활을 직접 조작해 싸우며, 유닛과 수치, 규칙은 원본 데이터를 그대로 따릅니다.
 
 ## 설치 (모드 베이스를 이미 설치하셨다면 1, 2번은 건너뛰십시오)
+
+**최신 릴리즈: [v0.1.5](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.5.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.5/Battle3D_v0.1.5.zip)** (약 120 MB)
+
 1. **BepInEx 6** (Unity Mono, `6.0.0-be.692`)를 내려받아 게임 폴더(`Mortal.exe`가 있는 폴더)에 압축 해제합니다.
    - [BepInEx 빌드 페이지](https://builds.bepinex.dev/projects/bepinex_be)에서 `be.692` 의 *Unity Mono, Windows x64* 를 내려받습니다.
 2. 게임을 한 번 실행하여 `BepInEx` 폴더가 생성된 것을 확인한 뒤 종료합니다.
-3. [Releases](../../releases)에서 `Battle3D_vX.Y.Z.zip` 을 내려받습니다.
-4. zip 안의 `BepInEx` 폴더를 **게임 폴더에 그대로 붙여넣기(덮어쓰기)** 합니다.
+3. 위의 **Battle3D_v0.1.5.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.5.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
+4. 내려받은 ZIP의 압축을 풀고, 안의 `BepInEx` 폴더를 **게임 폴더에 그대로 붙여넣기(덮어쓰기)** 합니다.
    결과: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 게임을 실행하고 단체전에 진입하면 3D 전투가 시작됩니다.
 

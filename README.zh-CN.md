@@ -9,11 +9,14 @@
 将活侠传的团战替换为全新制作的 3D 战斗的模组。由玩家直接操作主角赵活，单位、数值和规则均沿用原版数据。
 
 ## 安装（如果已经安装了模组基础包 Mod base，请跳过第 1、2 步）
+
+**最新版本：[v0.1.5](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下载 Battle3D_v0.1.5.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.5/Battle3D_v0.1.5.zip)**（约 120 MB）
+
 1. 下载 **BepInEx 6**（Unity Mono，`6.0.0-be.692`），解压到游戏文件夹（`Mortal.exe` 所在位置）。
    - 在 [BepInEx 构建页面](https://builds.bepinex.dev/projects/bepinex_be) 下载 `be.692` 的 *Unity Mono, Windows x64*。
 2. 先运行一次游戏，确认生成了 `BepInEx` 文件夹，然后关闭游戏。
-3. 从 [Releases](../../releases) 下载 `Battle3D_vX.Y.Z.zip`。
-4. 把压缩包里的 `BepInEx` 文件夹 **直接粘贴（覆盖）到游戏文件夹**。
+3. 点击上方的 **下载 Battle3D_v0.1.5.zip** 获取安装包。在[最新发布页面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，请选择 **Assets → `Battle3D_v0.1.5.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安装包。
+4. 解压下载的 ZIP，把里面的 `BepInEx` 文件夹 **直接粘贴（覆盖）到游戏文件夹**。
    结果：`...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 启动游戏并进入团战，即可看到 3D 战斗。
 
