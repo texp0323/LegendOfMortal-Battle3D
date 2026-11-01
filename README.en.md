@@ -44,32 +44,60 @@ The control scheme can be changed from the keyboard-settings button of the in-ba
 ## Troubleshooting
 Open `BepInEx\LogOutput.log` first. When the mod is running it writes lines starting with `[Battle 3D]`. Please attach this file when reporting a problem.
 
-**The mod doesn't start (no `[Battle 3D]` lines in the log)**
+<details>
+<summary><b>The mod doesn't start (no `[Battle 3D]` lines in the log)</b></summary>
+
 - If `BepInEx\LogOutput.log` doesn't exist at all, BepInEx isn't running. Check that the game folder (next to `Mortal.exe`) has `winhttp.dll`, `doorstop_config.ini` and the `BepInEx` folder. (Redo install steps 1 and 2.)
 - Check the file locations. All four must be inside `BepInEx\plugins\Battle3D\`: `Battle3D.dll`, `battle3d.bundle`, `battle3d_environment.bundle` and the `Audio` folder. There must not be an extra level (`Battle3D\Battle3D\...`).
 - BepInEx must be **6.0.0-be.692 (Unity Mono)**. Version 5.x or an IL2CPP build won't work.
 - Temporarily move every other mod out of `BepInEx\plugins` and run with this mod alone. If that works but it fails together with other mods, tell us which ones you used.
 - Windows may block files when extracting. Tick *Unblock* in the zip's properties and extract again. Also check whether your antivirus quarantined `Battle3D.dll`.
 
-**The mod starts but the battle doesn't turn 3D**
+</details>
+
+<details>
+<summary><b>The mod starts but the battle doesn't turn 3D</b></summary>
+
 - In the `F4` settings panel, check that the 3D battle is on. Also check `[General] Enabled` and `ExcludedBattles` in `BepInEx\config\mortal.battle3d.cfg`.
 - Battles that aren't built in 3D yet stay as the original.
 - If the log shows an error (`Exception`) with `Battle 3D`, please send that line.
 
-**An error like `file ... is corrupted! Position out of bounds` and the game closes**
+</details>
+
+<details>
+<summary><b>An error like `file ... is corrupted! Position out of bounds` and the game closes</b></summary>
+
 - This happens when `battle3d.bundle` or `battle3d_environment.bundle` was not fully downloaded, or was overwritten while the game was running. Close the game completely, download the zip again and overwrite. (The two bundles are about 70 MB and 56 MB.)
 
-**No sound / too loud**
+</details>
+
+<details>
+<summary><b>No sound / too loud</b></summary>
+
 - Adjust it in the sound section of the `F4` panel. Also check that the `Audio` folder is inside the `Battle3D` folder.
 
-**Too dark or slow**
+</details>
+
+<details>
+<summary><b>Too dark or slow</b></summary>
+
 - Turn off toon shading / outline in the graphics section of the `F4` panel, or set `[Graphics] PostProcessing` to `false` in the config file.
 
-**Reset the settings**
+</details>
+
+<details>
+<summary><b>Reset the settings</b></summary>
+
 - Close the game and delete `BepInEx\config\mortal.battle3d.cfg`. It is recreated with the defaults at the next start.
 
-**Errors after a game update**
+</details>
+
+<details>
+<summary><b>Errors after a game update</b></summary>
+
 - If a game update changes the original code, the mod may stop fitting. Check for a newer release, and if there isn't one, open an issue with your log.
+
+</details>
 
 ## License / terms of use
 Free for anyone to use under the [MIT License](LICENSE).

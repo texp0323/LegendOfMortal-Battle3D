@@ -43,32 +43,60 @@
 ## 문제 해결
 먼저 `BepInEx\LogOutput.log` 를 열어 확인하십시오. 모드가 정상적으로 실행되면 `[Battle 3D]` 로 시작하는 줄이 기록됩니다. 문제를 문의하실 때는 이 파일을 함께 첨부해 주십시오.
 
-**게임을 실행해도 모드가 켜지지 않습니다 (로그에 `[Battle 3D]` 줄이 없음)**
+<details>
+<summary><b>게임을 실행해도 모드가 켜지지 않습니다 (로그에 `[Battle 3D]` 줄이 없음)</b></summary>
+
 - `BepInEx\LogOutput.log` 파일 자체가 없다면 BepInEx가 실행되지 않은 것입니다. 게임 폴더(`Mortal.exe` 옆)에 `winhttp.dll`, `doorstop_config.ini`, `BepInEx` 폴더가 있는지 확인하십시오. (설치 1, 2번을 다시 진행해 보십시오.)
 - 파일 위치를 확인하십시오. 다음 네 항목이 모두 `BepInEx\plugins\Battle3D\` 안에 있어야 합니다: `Battle3D.dll`, `battle3d.bundle`, `battle3d_environment.bundle`, `Audio` 폴더. 폴더가 한 단계 더 들어가 있으면(`Battle3D\Battle3D\...`) 인식되지 않습니다.
 - BepInEx는 **6.0.0-be.692 (Unity Mono)** 이어야 합니다. 5.x 버전이나 IL2CPP 빌드에서는 동작하지 않습니다.
 - 다른 모드를 모두 `BepInEx\plugins`에서 잠시 제외하고 이 모드만 실행해 보십시오. 단독으로는 정상이지만 다른 모드와 함께 쓸 때 문제가 생긴다면, 함께 사용한 모드를 알려 주십시오.
 - 압축 해제 시 윈도우가 파일을 차단하는 경우가 있습니다. zip 파일 속성에서 *차단 해제*를 체크한 뒤 다시 압축을 해제하십시오. 백신 프로그램이 `Battle3D.dll`을 격리하지 않았는지도 확인하십시오.
 
-**모드는 실행되지만 전투가 3D로 전환되지 않습니다**
+</details>
+
+<details>
+<summary><b>모드는 실행되지만 전투가 3D로 전환되지 않습니다</b></summary>
+
 - `F4` 설정 패널에서 3D 전투가 켜져 있는지 확인하십시오. 설정 파일(`BepInEx\config\mortal.battle3d.cfg`)의 `[General] Enabled` 와 `ExcludedBattles` 도 확인하십시오.
 - 아직 3D로 제작되지 않은 전투는 원본 그대로 진행됩니다.
 - 로그에 `Battle 3D` 와 함께 오류(`Exception`)가 기록되어 있다면 해당 줄을 알려 주십시오.
 
-**`file ... is corrupted! Position out of bounds` 와 같은 오류가 표시되며 게임이 종료됩니다**
+</details>
+
+<details>
+<summary><b>`file ... is corrupted! Position out of bounds` 와 같은 오류가 표시되며 게임이 종료됩니다</b></summary>
+
 - `battle3d.bundle` 또는 `battle3d_environment.bundle` 이 완전히 내려받아지지 않았거나, 게임이 실행 중인 상태에서 덮어쓰기가 이루어진 경우 발생합니다. 게임을 완전히 종료한 뒤 zip을 다시 내려받아 덮어쓰십시오. (번들 두 개의 크기는 각각 약 70 MB, 56 MB입니다.)
 
-**소리가 나지 않거나 너무 큽니다**
+</details>
+
+<details>
+<summary><b>소리가 나지 않거나 너무 큽니다</b></summary>
+
 - `F4` 설정 패널의 소리 항목에서 조절하십시오. `Audio` 폴더가 `Battle3D` 폴더 안에 있는지도 확인하십시오.
 
-**화면이 너무 어둡거나 느립니다**
+</details>
+
+<details>
+<summary><b>화면이 너무 어둡거나 느립니다</b></summary>
+
 - `F4` 패널의 그래픽 항목에서 툰 셰이딩·외곽선을 끄거나, 설정 파일에서 `[Graphics] PostProcessing` 을 `false` 로 변경해 보십시오.
 
-**설정을 초기화하고 싶습니다**
+</details>
+
+<details>
+<summary><b>설정을 초기화하고 싶습니다</b></summary>
+
 - 게임을 종료한 뒤 `BepInEx\config\mortal.battle3d.cfg` 를 삭제하십시오. 다음 실행 시 기본값으로 다시 생성됩니다.
 
-**게임 업데이트 이후 오류가 발생합니다**
+</details>
+
+<details>
+<summary><b>게임 업데이트 이후 오류가 발생합니다</b></summary>
+
 - 게임 업데이트로 원본 코드가 변경되면 모드가 맞지 않을 수 있습니다. 최신 릴리즈가 있는지 확인하시고, 없다면 로그와 함께 Issues에 문의해 주십시오.
+
+</details>
 
 ## 라이선스 / 이용 안내
 [MIT 라이선스](LICENSE)에 따라 누구나 무료로 자유롭게 이용하실 수 있습니다.

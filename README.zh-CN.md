@@ -43,32 +43,60 @@
 ## 常见问题
 请先打开 `BepInEx\LogOutput.log`。模组运行时会写入以 `[Battle 3D]` 开头的行。反馈问题时请附上这个文件。
 
-**模组没有启动（日志里没有 `[Battle 3D]` 行）**
+<details>
+<summary><b>模组没有启动（日志里没有 `[Battle 3D]` 行）</b></summary>
+
 - 如果根本没有 `BepInEx\LogOutput.log`，说明 BepInEx 没有运行。请确认游戏文件夹（`Mortal.exe` 旁边）里有 `winhttp.dll`、`doorstop_config.ini` 和 `BepInEx` 文件夹。（请重新做安装的第 1、2 步。）
 - 检查文件位置。下面四项必须都在 `BepInEx\plugins\Battle3D\` 里：`Battle3D.dll`、`battle3d.bundle`、`battle3d_environment.bundle`、`Audio` 文件夹。不能多套一层（`Battle3D\Battle3D\...`）。
 - BepInEx 必须是 **6.0.0-be.692（Unity Mono）**。5.x 版本或 IL2CPP 版本无法使用。
 - 暂时把其他模组全部移出 `BepInEx\plugins`，只留这个模组再试。如果单独可以、与其他模组一起就不行，请告诉我们用了哪些模组。
 - 解压时 Windows 可能会拦截文件。请在 zip 文件属性里勾选“解除锁定”后重新解压。也请确认杀毒软件没有隔离 `Battle3D.dll`。
 
-**模组已启动，但战斗没有变成 3D**
+</details>
+
+<details>
+<summary><b>模组已启动，但战斗没有变成 3D</b></summary>
+
 - 在 `F4` 设置面板里确认 3D 战斗已开启。也请检查 `BepInEx\config\mortal.battle3d.cfg` 里的 `[General] Enabled` 和 `ExcludedBattles`。
 - 尚未制作 3D 版本的战斗仍是原版。
 - 如果日志里有带 `Battle 3D` 的错误（`Exception`），请把那一行发给我们。
 
-**出现 `file ... is corrupted! Position out of bounds` 之类的错误并闪退**
+</details>
+
+<details>
+<summary><b>出现 `file ... is corrupted! Position out of bounds` 之类的错误并闪退</b></summary>
+
 - 这是因为 `battle3d.bundle` 或 `battle3d_environment.bundle` 没有下载完整，或者在游戏运行时被覆盖。请完全关闭游戏，重新下载 zip 并覆盖。（两个资源包分别约 70 MB 和 56 MB。）
 
-**没有声音 / 声音太大**
+</details>
+
+<details>
+<summary><b>没有声音 / 声音太大</b></summary>
+
 - 在 `F4` 面板的声音项里调整。也请确认 `Audio` 文件夹在 `Battle3D` 文件夹里。
 
-**画面太暗或太卡**
+</details>
+
+<details>
+<summary><b>画面太暗或太卡</b></summary>
+
 - 在 `F4` 面板的画面项里关闭卡通着色 / 描边，或在配置文件里把 `[Graphics] PostProcessing` 改为 `false`。
 
-**想把设置恢复默认**
+</details>
+
+<details>
+<summary><b>想把设置恢复默认</b></summary>
+
 - 关闭游戏，删除 `BepInEx\config\mortal.battle3d.cfg`。下次启动时会按默认值重新生成。
 
-**游戏更新后出错**
+</details>
+
+<details>
+<summary><b>游戏更新后出错</b></summary>
+
 - 游戏更新改动了原版代码时，模组可能不再适用。请查看是否有新版本，没有的话请在 Issues 里附上日志反馈。
+
+</details>
 
 ## 许可 / 使用说明
 依据 [MIT 许可证](LICENSE)，任何人都可以免费自由使用。
