@@ -75,10 +75,12 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - **분력난격**: A flurry of slashes stronger than the basic attack; it builds the chain like the basic attack does.
 - **호체기조**: Raises a barrier for 5 seconds that ignores all damage and status effects.
 - **방어 (Block)**: Pushes back the enemies in front; you take no damage during the move.
-- **점파운관**: At chain 8 or more, spends the whole chain and thrusts forward, dealing that much damage.
+- **점파운관**: At chain 8 or more, spends the whole chain and thrusts forward. Damage is the finisher's damage × 0.5 × chain.
 - **운소뇌정벽력도**: Cuts with the basic attack's first swing while lightning falls on a fan ahead, dealing damage and paralysis and breaking balance.
-- **풍뢰신각**: At chain 4 or more, spends the whole chain and charges forward in a flying kick.
+- **풍뢰신각**: At chain 4 or more, spends the whole chain and charges forward in a flying kick. Damage is the finisher's damage × 0.45 × chain.
 - **비천각**: Jumps, then slams down.
+
+Since no place to obtain 풍뢰신각 and 비천각 in the story has been found, they count as learned in battles entered from the F4 panel.
 
 </details>
 
@@ -91,6 +93,7 @@ Shown at the upper right of the ready screen and gone once the fight starts.
 - **사상전**: The fight starts with a chain already built; higher levels start higher.
 - **서여림**: Stamina recovers more each time it regenerates, scaling with the 전술 (tactics) level.
 - **사초침**: A thrown hidden weapon that hits has a 30% chance to throw the target off balance.
+- **동여뢰진**: Targets hit by 운소뇌정벽력도 fall down.
 
 </details>
 
