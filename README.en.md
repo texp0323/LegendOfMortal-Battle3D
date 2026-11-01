@@ -75,7 +75,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 <details>
 <summary><b>Bosses and special enemies</b></summary>
 
-- **석공원**: Charges at the very start, then walks in to swing or throws stones and knives. Has super armor.
+- **석공원**: Charges at the very start, then walks in to swing or throws stones and knives.
 - **단하자**: A four-hit slashing combo with two weapons, hitting all around.
 - **우소매**: Mixes combos with jump attacks and dash slashes, and keeps pace with Johwal.
 - All bosses have super armor, so attacks hardly push them back.
