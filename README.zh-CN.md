@@ -151,7 +151,7 @@
 | `[Camera] Pitch` | `35` | 镜头俯角（度） |
 | `[Camera] Yaw` | `45` | 镜头水平角（度） |
 | `[Camera] Distance` | `23` | 默认镜头距离（鼠标滚轮缩放） |
-| `[Camera] ShakeStrength` | `1` | 画面震动强度（0 = 关闭，1 = 原样） |
+| `[Camera] ShakeStrength` | `0` | 画面震动强度（0 = 关闭，1 = 原样） |
 | `[Graphics] PostProcessing` | `true` | 泛光、色彩校正、暗角 |
 | `[Graphics] Intro` | `true` | 进入战斗时镜头从天空穿过云层降下的演出 |
 | `[Graphics] ToonShader` | `true` | 卡通着色（关闭则为普通 URP 着色） |

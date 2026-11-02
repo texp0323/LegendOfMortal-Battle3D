@@ -152,7 +152,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 | `[Camera] Pitch` | `35` | Camera pitch (degrees) |
 | `[Camera] Yaw` | `45` | Camera yaw (degrees) |
 | `[Camera] Distance` | `23` | Default camera distance (mouse wheel zooms) |
-| `[Camera] ShakeStrength` | `1` | Strength of the screen shake (0 = off, 1 = as made) |
+| `[Camera] ShakeStrength` | `0` | Strength of the screen shake (0 = off, 1 = as made) |
 | `[Graphics] PostProcessing` | `true` | Bloom, colour grading and vignette |
 | `[Graphics] Intro` | `true` | The camera diving through the clouds when a battle starts |
 | `[Graphics] ToonShader` | `true` | Toon shading (off: plain URP shading) |

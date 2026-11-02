@@ -151,7 +151,7 @@
 | `[Camera] Pitch` | `35` | 鏡頭俯角（度） |
 | `[Camera] Yaw` | `45` | 鏡頭水平角（度） |
 | `[Camera] Distance` | `23` | 預設鏡頭距離（滑鼠滾輪縮放） |
-| `[Camera] ShakeStrength` | `1` | 畫面震動強度（0 = 關閉，1 = 原樣） |
+| `[Camera] ShakeStrength` | `0` | 畫面震動強度（0 = 關閉，1 = 原樣） |
 | `[Graphics] PostProcessing` | `true` | 泛光、色彩校正、暗角 |
 | `[Graphics] Intro` | `true` | 進入戰鬥時鏡頭從天空穿過雲層降下的演出 |
 | `[Graphics] ToonShader` | `true` | 卡通著色（關閉則為普通 URP 著色） |
