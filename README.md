@@ -1,4 +1,4 @@
-<p align="right"><b>한국어</b> · <a href="README.en.md">English</a> · <a href="README.zh-CN.md">简体中文</a></p>
+<p align="right"><b>한국어</b> · <a href="README.en.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a></p>
 
 # Battle3D — 활협전 단체전 3D 모드
 
@@ -7,6 +7,8 @@
 
 ## 모드 소개
 활협전의 단체전을 새로 제작한 3D 전투로 바꿔 주는 모드입니다. 주인공 조활을 직접 조작해 싸우며, 유닛과 수치, 규칙은 원본 데이터를 그대로 따릅니다.
+
+모드가 직접 쓴 문구(스킬 설명, 패시브, 화면 문구)는 게임 언어에 맞춰 표시됩니다. 게임이 가진 세 언어(한국어, 중국어 간체, 중국어 번체)를 지원하며, 스킬·인물 등의 이름은 게임에 이미 있는 번역을 그대로 씁니다. 게임에는 영어가 없습니다.
 
 ## 설치 (모드 베이스를 이미 설치하셨다면 1, 2번은 건너뛰십시오)
 
@@ -146,6 +148,7 @@
 | `[Camera] Pitch` | `35` | 카메라 기울기 (도) |
 | `[Camera] Yaw` | `45` | 카메라 회전 (도) |
 | `[Camera] Distance` | `23` | 기본 카메라 거리 (마우스 휠로 확대·축소) |
+| `[Camera] ShakeStrength` | `1` | 화면 흔들림 세기 (0 = 끔, 1 = 기본) |
 | `[Graphics] PostProcessing` | `true` | 블룸·색 보정·비네트 |
 | `[Graphics] Intro` | `true` | 전투 입장 시 하늘에서 구름을 뚫고 내려오는 연출 |
 | `[Graphics] ToonShader` | `true` | 툰 셰이딩 (끄면 일반 URP 셰이딩) |
