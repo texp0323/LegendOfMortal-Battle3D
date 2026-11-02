@@ -148,7 +148,7 @@
 | `[Camera] Pitch` | `35` | 카메라 기울기 (도) |
 | `[Camera] Yaw` | `45` | 카메라 회전 (도) |
 | `[Camera] Distance` | `23` | 기본 카메라 거리 (마우스 휠로 확대·축소) |
-| `[Camera] ShakeStrength` | `1` | 화면 흔들림 세기 (0 = 끔, 1 = 기본) |
+| `[Camera] ShakeStrength` | `1` | 화면 흔들림과 타격 시 카메라 확대 세기 (0 = 끔, 1 = 기본) |
 | `[Graphics] PostProcessing` | `true` | 블룸·색 보정·비네트 |
 | `[Graphics] Intro` | `true` | 전투 입장 시 하늘에서 구름을 뚫고 내려오는 연출 |
 | `[Graphics] ToonShader` | `true` | 툰 셰이딩 (끄면 일반 URP 셰이딩) |
