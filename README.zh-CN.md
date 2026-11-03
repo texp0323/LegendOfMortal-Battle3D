@@ -10,12 +10,12 @@
 
 ## 安装（如果已经安装了模组基础包 Mod base，请跳过第 1、2 步）
 
-**最新版本：[v0.1.13](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下载 Battle3D_v0.1.13.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.13/Battle3D_v0.1.13.zip)**（约 120 MB）
+**最新版本：[v0.1.14](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下载 Battle3D_v0.1.14.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.14/Battle3D_v0.1.14.zip)**（约 120 MB）
 
 1. 下载 **BepInEx 6**（Unity Mono，`6.0.0-be.692`），解压到游戏文件夹（`Mortal.exe` 所在位置）。
    - 在 [BepInEx 构建页面](https://builds.bepinex.dev/projects/bepinex_be) 下载 `be.692` 的 *Unity Mono, Windows x64*。
 2. 先运行一次游戏，确认生成了 `BepInEx` 文件夹，然后关闭游戏。
-3. 点击上方的 **下载 Battle3D_v0.1.13.zip** 获取安装包。在[最新发布页面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，请选择 **Assets → `Battle3D_v0.1.13.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安装包。
+3. 点击上方的 **下载 Battle3D_v0.1.14.zip** 获取安装包。在[最新发布页面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，请选择 **Assets → `Battle3D_v0.1.14.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安装包。
 4. 解压下载的 ZIP，把里面的 `BepInEx` 文件夹 **直接粘贴（覆盖）到游戏文件夹**。
    结果：`...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 启动游戏并进入团战，即可看到 3D 战斗。
@@ -36,7 +36,7 @@
 | 暗器 | 鼠标右键（长按为抛射） |
 | 翻滚 / 冲刺 | Space |
 | 技能 1~4 | Q E R F |
-| 嘴攻 | T（技能键中不用 R 时为 R） |
+| 嘴攻 | T |
 
 </details>
 
