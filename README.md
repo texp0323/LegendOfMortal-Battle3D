@@ -12,12 +12,12 @@
 
 ## 설치 (모드 베이스를 이미 설치하셨다면 1, 2번은 건너뛰십시오)
 
-**최신 릴리즈: [v0.1.8](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.8.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.8/Battle3D_v0.1.8.zip)** (약 120 MB)
+**최신 릴리즈: [v0.1.9](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.9.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.9/Battle3D_v0.1.9.zip)** (약 120 MB)
 
 1. **BepInEx 6** (Unity Mono, `6.0.0-be.692`)를 내려받아 게임 폴더(`Mortal.exe`가 있는 폴더)에 압축 해제합니다.
    - [BepInEx 빌드 페이지](https://builds.bepinex.dev/projects/bepinex_be)에서 `be.692` 의 *Unity Mono, Windows x64* 를 내려받습니다.
 2. 게임을 한 번 실행하여 `BepInEx` 폴더가 생성된 것을 확인한 뒤 종료합니다.
-3. 위의 **Battle3D_v0.1.8.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.8.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
+3. 위의 **Battle3D_v0.1.9.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.9.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
 4. 내려받은 ZIP의 압축을 풀고, 안의 `BepInEx` 폴더를 **게임 폴더에 그대로 붙여넣기(덮어쓰기)** 합니다.
    결과: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 게임을 실행하고 단체전에 진입하면 3D 전투가 시작됩니다.
@@ -72,6 +72,7 @@
 - 자동 조준 켜기·끄기: 왼쪽 Ctrl
 - 설정 패널: F4
 - 조작 목록 숨기기: F11
+- 마비가 걸리면 1초 동안 이동할 수 없습니다(공격과 행동은 가능). 이후에는 이동이 느려집니다.
 - 구공: R (R이 스킬 키로 쓰이고 있으면 T), ClickMove는 T, Keyboard는 V. 주변 적이 조활을 노리며 쿨타임은 5초입니다. 배운 음공(용음공·사자후·호소공·열화선)은 자동으로 적용되고 하나당 쿨타임이 1초 늘어납니다. 용음공은 추가 피해, 사자후는 휘청거림, 호소공은 마비, 열화선은 화상을 더합니다.
 - 도검 수치가 높을수록 평타가 빨라집니다(100에서 최대 +50%).
 - 스킬 선택 화면: 목록 클릭으로 장착·해제, 드래그로 교체, 우클릭으로 해제. F4 패널에서 끌 수 있습니다.
@@ -113,6 +114,8 @@
 - **사초침**: 던진 암기가 맞으면 30% 확률로 상대의 균형을 잃게 합니다.
 - **동여뢰진**: 운소뇌정벽력도에 맞은 적이 넘어져 2초간 움직이지 못합니다.
 - **추가·암기**: 암기를 던질 때마다 하나 더 던집니다.
+- **독공**: 근접 평타가 맞으면 평사 암기가 주는 중독·마비 누적치의 50%를 부여합니다(암기에 독·마비 효과가 있을 때).
+- **의술**: 전투 중 10초마다 레벨(최대 7)만큼 체력을 회복합니다.
 
 </details>
 

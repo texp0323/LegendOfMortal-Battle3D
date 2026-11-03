@@ -12,12 +12,12 @@
 
 ## 安装（如果已经安装了模组基础包 Mod base，请跳过第 1、2 步）
 
-**最新版本：[v0.1.8](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下载 Battle3D_v0.1.8.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.8/Battle3D_v0.1.8.zip)**（约 120 MB）
+**最新版本：[v0.1.9](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下载 Battle3D_v0.1.9.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.9/Battle3D_v0.1.9.zip)**（约 120 MB）
 
 1. 下载 **BepInEx 6**（Unity Mono，`6.0.0-be.692`），解压到游戏文件夹（`Mortal.exe` 所在位置）。
    - 在 [BepInEx 构建页面](https://builds.bepinex.dev/projects/bepinex_be) 下载 `be.692` 的 *Unity Mono, Windows x64*。
 2. 先运行一次游戏，确认生成了 `BepInEx` 文件夹，然后关闭游戏。
-3. 点击上方的 **下载 Battle3D_v0.1.8.zip** 获取安装包。在[最新发布页面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，请选择 **Assets → `Battle3D_v0.1.8.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安装包。
+3. 点击上方的 **下载 Battle3D_v0.1.9.zip** 获取安装包。在[最新发布页面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，请选择 **Assets → `Battle3D_v0.1.9.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安装包。
 4. 解压下载的 ZIP，把里面的 `BepInEx` 文件夹 **直接粘贴（覆盖）到游戏文件夹**。
    结果：`...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 启动游戏并进入团战，即可看到 3D 战斗。
@@ -72,6 +72,7 @@
 - 自动瞄准开 / 关：左 Ctrl
 - 设置面板：F4
 - 隐藏操作列表：F11
+- 麻痹发作时，1 秒内无法移动（仍可攻击与行动），之后移动变慢。
 - 嘴攻：R（R 已作技能键时用 T），ClickMove 为 T，Keyboard 为 V。周围敌人会攻击主角，冷却 5 秒。已学会的音功（龙吟功、狮吼功、虎啸功、烈火禅）自动生效，每个使冷却增加 1 秒。龙吟功追加伤害，狮吼功使敌人踉跄，虎啸功累积麻痹，烈火禅造成灼伤。
 - 刀剑数值越高，普通攻击越快（100 时最高 +50%）。
 - 准备界面的技能选择：点击技能装备或取消，拖动交换，右键取消。可在 F4 面板中关闭。
@@ -115,6 +116,8 @@
 - **似草针**：投出的暗器命中时，有 30% 几率造成失衡。
 - **动如雷震**：被云霄雷霆霹雳刀击中的敌人会倒地并静止 2 秒。
 - **额外暗器**：每投掷一次暗器，多投 1 枚。
+- **毒功**：近战普通攻击命中时，附带平射暗器 50% 的中毒与麻痹累积（暗器带有此类效果时）。
+- **医术**：战斗中每 10 秒恢复与等级相同的体力（最高 7 级）。
 
 </details>
 
