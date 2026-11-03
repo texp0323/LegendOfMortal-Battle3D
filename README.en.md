@@ -115,7 +115,7 @@ Shown at the upper right of the ready screen and gone once the fight starts.
 - **徐如林**: Stamina recovers more each time it regenerates, scaling with the 戰術 (tactics) level.
 - **似草針**: A thrown hidden weapon that hits has a 30% chance to break the target's balance.
 - **動如雷震**: Targets hit by 雲霄雷霆霹靂刀 fall down and stay still for 2 seconds.
-- **額外暗器**: Every throw sends one more hidden weapon per level.
+- **額外暗器**: Every throw sends one more hidden weapon.
 
 </details>
 
