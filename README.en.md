@@ -13,12 +13,12 @@ The mod's own texts (skill descriptions, passives, screens) follow the game's la
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 
-**Latest release: [v0.1.12](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.12.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.12/Battle3D_v0.1.12.zip)** (about 120 MB)
+**Latest release: [v0.1.13](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.13.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.13/Battle3D_v0.1.13.zip)** (about 120 MB)
 
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
    - From the [BepInEx builds page](https://builds.bepinex.dev/projects/bepinex_be) take `be.692`, *Unity Mono, Windows x64*.
 2. Run the game once so the `BepInEx` folder is created, then close it.
-3. Use **Download Battle3D_v0.1.12.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.12.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
+3. Use **Download Battle3D_v0.1.13.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.13.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
 4. Extract the downloaded ZIP, then **paste its `BepInEx` folder over the game folder** (merge / overwrite).
    Result: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. Start the game and enter a group battle: the 3D battle opens.
