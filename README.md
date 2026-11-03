@@ -12,12 +12,12 @@
 
 ## 설치 (모드 베이스를 이미 설치하셨다면 1, 2번은 건너뛰십시오)
 
-**최신 릴리즈: [v0.1.11](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.11.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.11/Battle3D_v0.1.11.zip)** (약 120 MB)
+**최신 릴리즈: [v0.1.12](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.12.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.12/Battle3D_v0.1.12.zip)** (약 120 MB)
 
 1. **BepInEx 6** (Unity Mono, `6.0.0-be.692`)를 내려받아 게임 폴더(`Mortal.exe`가 있는 폴더)에 압축 해제합니다.
    - [BepInEx 빌드 페이지](https://builds.bepinex.dev/projects/bepinex_be)에서 `be.692` 의 *Unity Mono, Windows x64* 를 내려받습니다.
 2. 게임을 한 번 실행하여 `BepInEx` 폴더가 생성된 것을 확인한 뒤 종료합니다.
-3. 위의 **Battle3D_v0.1.11.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.11.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
+3. 위의 **Battle3D_v0.1.12.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.12.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
 4. 내려받은 ZIP의 압축을 풀고, 안의 `BepInEx` 폴더를 **게임 폴더에 그대로 붙여넣기(덮어쓰기)** 합니다.
    결과: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 게임을 실행하고 단체전에 진입하면 3D 전투가 시작됩니다.
@@ -74,7 +74,7 @@
 - 조작 목록 숨기기: F11
 - 마비가 걸리면 1초 동안 이동할 수 없습니다(공격과 행동은 가능). 이후에는 이동이 느려집니다.
 - 조활이 던지는 암기(평사·곡사)의 피해는 항목 피해의 50%로 들어갑니다. 암기 효과가 쌓는 독·마비 누적치는 2배이며, 효과가 시작되기 전에는 줄어들지 않습니다.
-- 구공: R (R이 스킬 키로 쓰이고 있으면 T), ClickMove는 T, Keyboard는 V. 주변 적이 조활을 노리며 쿨타임은 5초입니다. 배운 음공(용음공·사자후·호소공·열화선)은 자동으로 적용되고 하나당 쿨타임이 1초 늘어납니다. 용음공은 추가 피해, 사자후는 휘청거림, 호소공은 마비, 열화선은 화상을 더합니다.
+- 구공: R (R이 스킬 키로 쓰이고 있으면 T), ClickMove는 T, Keyboard는 V. 주변 적이 조활을 노리며 쿨타임은 5초입니다. 배운 음공(용음공·호소공·열화선)은 자동으로 적용되고 하나당 쿨타임이 1초 늘어납니다. 용음공은 추가 피해, 호소공은 마비, 열화선은 화상을 더합니다.
 - 도검 수치가 높을수록 평타가 빨라집니다(100에서 최대 +50%).
 - 스킬 선택 화면: 목록 클릭으로 장착·해제, 드래그로 교체, 우클릭으로 해제. F4 패널에서 끌 수 있습니다.
 - F4 패널의 "적 일괄 등장"을 켜면 적 전원이 처음부터 필드에 섭니다.

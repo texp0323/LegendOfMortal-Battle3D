@@ -13,12 +13,12 @@ The mod's own texts (skill descriptions, passives, screens) follow the game's la
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 
-**Latest release: [v0.1.11](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.11.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.11/Battle3D_v0.1.11.zip)** (about 120 MB)
+**Latest release: [v0.1.12](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.12.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.12/Battle3D_v0.1.12.zip)** (about 120 MB)
 
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
    - From the [BepInEx builds page](https://builds.bepinex.dev/projects/bepinex_be) take `be.692`, *Unity Mono, Windows x64*.
 2. Run the game once so the `BepInEx` folder is created, then close it.
-3. Use **Download Battle3D_v0.1.11.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.11.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
+3. Use **Download Battle3D_v0.1.12.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.12.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
 4. Extract the downloaded ZIP, then **paste its `BepInEx` folder over the game folder** (merge / overwrite).
    Result: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. Start the game and enter a group battle: the 3D battle opens.
@@ -75,7 +75,7 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - Hide the controls list: F11
 - Paralysis keeps a unit from moving for 1 second (it can still attack and act), then slows it as before.
 - Johwal's thrown hidden weapons (straight and lobbed) hit for 50% of the item's damage. The poison and paralysis their effects give pile up 2 times as fast, and do not fall before the effect has started.
-- Shout (嘴攻): R (T if R is a skill key), T in ClickMove, V in Keyboard. Enemies around turn on Johwal; cooldown 5 s. The 音功 you have learned (龍吟功, 獅吼功, 虎嘯功, 烈火禪) apply automatically and each adds 1 s to the cooldown. 龍吟功 adds damage, 獅吼功 a stagger, 虎嘯功 paralysis, 烈火禪 a burn.
+- Shout (嘴攻): R (T if R is a skill key), T in ClickMove, V in Keyboard. Enemies around turn on Johwal; cooldown 5 s. The 音功 you have learned (龍吟功, 虎嘯功, 烈火禪) apply automatically and each adds 1 s to the cooldown. 龍吟功 adds damage, 虎嘯功 paralysis, 烈火禪 a burn.
 - A higher 刀劍 (blade) stat quickens the basic attack (up to +50% at 100).
 - Skill picking on the ready screen: click a skill to equip or unequip, drag to swap, right click to remove. It can be turned off in the F4 panel.
 - "All enemies at once" in the F4 panel puts every enemy on the field from the start.
