@@ -9,8 +9,6 @@ Battles you don't pick stay as the original.
 ## About
 A mod that turns the group battles of Legend of Mortal into newly built 3D fights. You control Johwal directly, while units, numbers and rules follow the original data.
 
-The mod's own texts (skill descriptions, passives, screens) follow the game's language: Korean, Simplified Chinese and Traditional Chinese, the three languages the game has (there is no English in the game). Names of skills, people and the like are the game's own lines. They are shown below as in the game's Traditional Chinese version.
-
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 
 **Latest release: [v0.1.13](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.13.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.13/Battle3D_v0.1.13.zip)** (about 120 MB)
@@ -39,6 +37,7 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 | Throw | Right click (hold for a lobbed throw) |
 | Roll / dash | Space |
 | Skills 1–4 | Q E R F |
+| Shout (嘴攻) | T (R if no skill uses R) |
 
 </details>
 
@@ -52,6 +51,7 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 | Throw | F (hold for a lobbed throw) |
 | Roll / dash | Space |
 | Skills 1–4 | Q W E R |
+| Shout (嘴攻) | T |
 
 </details>
 
@@ -65,6 +65,7 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 | Throw | X (hold for a lobbed throw) |
 | Roll / dash | Space |
 | Skills 1–4 | A S D C |
+| Shout (嘴攻) | V |
 
 </details>
 
@@ -75,7 +76,7 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - Hide the controls list: F11
 - Paralysis keeps a unit from moving for 1 second (it can still attack and act), then slows it as before.
 - Johwal's thrown hidden weapons (straight and lobbed) hit for 50% of the item's damage. The poison and paralysis their effects give pile up 2 times as fast, and do not fall before the effect has started.
-- Shout (嘴攻): R (T if R is a skill key), T in ClickMove, V in Keyboard. Enemies around turn on Johwal; cooldown 5 s. The 音功 you have learned (龍吟功, 虎嘯功, 烈火禪) apply automatically and each adds 1 s to the cooldown. 龍吟功 adds damage, 虎嘯功 paralysis, 烈火禪 a burn.
+- Shout (嘴攻): Enemies around turn on Johwal; cooldown 5 s. The 音功 you have learned (龍吟功, 虎嘯功, 烈火禪) apply automatically and each adds 1 s to the cooldown. 龍吟功 adds damage, 虎嘯功 paralysis, 烈火禪 a burn.
 - A higher 刀劍 (blade) stat quickens the basic attack (up to +50% at 100).
 - Skill picking on the ready screen: click a skill to equip or unequip, drag to swap, right click to remove. It can be turned off in the F4 panel.
 - "All enemies at once" in the F4 panel puts every enemy on the field from the start.
