@@ -13,12 +13,12 @@ The mod's own texts (skill descriptions, passives, screens) follow the game's la
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 
-**Latest release: [v0.1.7](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.7.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.7/Battle3D_v0.1.7.zip)** (about 120 MB)
+**Latest release: [v0.1.8](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.8.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.8/Battle3D_v0.1.8.zip)** (about 120 MB)
 
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
    - From the [BepInEx builds page](https://builds.bepinex.dev/projects/bepinex_be) take `be.692`, *Unity Mono, Windows x64*.
 2. Run the game once so the `BepInEx` folder is created, then close it.
-3. Use **Download Battle3D_v0.1.7.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.7.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
+3. Use **Download Battle3D_v0.1.8.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.8.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
 4. Extract the downloaded ZIP, then **paste its `BepInEx` folder over the game folder** (merge / overwrite).
    Result: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. Start the game and enter a group battle: the 3D battle opens.
@@ -73,6 +73,10 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - Auto-aim on / off: Left Ctrl
 - Settings panel: F4
 - Hide the controls list: F11
+- Shout (嘴攻): R (T if R is a skill key), T in ClickMove, V in Keyboard. Enemies around turn on Johwal; cooldown 5 s. The 音功 you have learned (龍吟功, 獅吼功, 虎嘯功, 烈火禪) apply automatically and each adds 1 s to the cooldown. 龍吟功 adds damage, 獅吼功 a stagger, 虎嘯功 paralysis, 烈火禪 a burn.
+- A higher 刀劍 (blade) stat quickens the basic attack (up to +50% at 100).
+- Skill picking on the ready screen: click a skill to equip or unequip, drag to swap, right click to remove. It can be turned off in the F4 panel.
+- "All enemies at once" in the F4 panel puts every enemy on the field from the start.
 
 **Lightness (Qinggong): roll, dash and movement speed**
 
@@ -88,9 +92,14 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - **護體氣罩**: Raises a barrier for 5 seconds that ignores all damage and status effects.
 - **防禦**: Becomes invulnerable and pushes back the enemies in front.
 - **點破雲關**: At chain 8 or more, spends the whole chain and thrusts forward. Damage is the finisher's damage × 0.5 × chain.
-- **雲霄雷霆霹靂刀**: Cuts with the basic attack's first swing while lightning falls on a fan ahead, dealing damage and paralysis.
+- **雲霄雷霆霹靂刀**: Gathers strength in a crouch, then cuts with the basic attack's third swing while lightning falls on a fan ahead, dealing damage and paralysis. With 動如雷震, targets fall and stay still for 2 seconds.
 - **風雷神腳**: At chain 4 or more, spends the whole chain and charges forward in a flying kick. Damage is the finisher's damage × 0.45 × chain.
 - **飛天腳**: Jumps, then slams down.
+- **翻浪刀法**: Cuts ahead and shoves what it hits, marks the nearest of them with a small blue flame, dashes up to it and cuts once more.
+- **連環飛鏢** · **三花齊放** · **點水飛石** (slot passive skills): not skills you press; their effect applies while they sit in a slot.
+  - 連環飛鏢: holding the throw key keeps firing (no lobs). The gap is 0.6 s at 暗器 0 and 0.15 s at 100.
+  - 三花齊放: a lobbed throw sends 2 more hidden weapons. It cannot be equipped with 連環飛鏢; picking one takes the other's slot. Both unlock at the top level of 唐門暗器總綱.
+  - 點水飛石: a straight throw that hits skips on to another enemy nearby, up to 3 times, losing half its damage each time. It unlocks at the top level of 擲石問天.
 
 Since no place to obtain 風雷神腳 and 飛天腳 in the story has been found, they count as learned in battles entered from the F4 panel.
 
@@ -105,7 +114,8 @@ Shown at the upper right of the ready screen and gone once the fight starts.
 - **思想戰**: The fight starts with a chain already built; higher levels start higher.
 - **徐如林**: Stamina recovers more each time it regenerates, scaling with the 戰術 (tactics) level.
 - **似草針**: A thrown hidden weapon that hits has a 30% chance to break the target's balance.
-- **動如雷震**: Targets hit by 雲霄雷霆霹靂刀 fall down.
+- **動如雷震**: Targets hit by 雲霄雷霆霹靂刀 fall down and stay still for 2 seconds.
+- **額外暗器**: Every throw sends one more hidden weapon per level.
 
 </details>
 
