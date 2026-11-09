@@ -11,12 +11,12 @@ A mod that turns the group battles of Legend of Mortal into newly built 3D fight
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 
-**Latest release: [v0.1.17](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.17.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.17/Battle3D_v0.1.17.zip)** (about 120 MB)
+**Latest release: [v0.1.18](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.18.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.18/Battle3D_v0.1.18.zip)** (about 120 MB)
 
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
    - From the [BepInEx builds page](https://builds.bepinex.dev/projects/bepinex_be) take `be.692`, *Unity Mono, Windows x64*.
 2. Run the game once so the `BepInEx` folder is created, then close it.
-3. Use **Download Battle3D_v0.1.17.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.17.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
+3. Use **Download Battle3D_v0.1.18.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.18.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
 4. Extract the downloaded ZIP, then **paste its `BepInEx` folder over the game folder** (merge / overwrite).
    Result: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. Start the game and enter a group battle: the 3D battle opens.
@@ -120,12 +120,12 @@ On the ready screen and in the pause menu the pad stands in for the mouse. On th
 - **奮力一擊**: After a short charge, three slashes forward in a row while invulnerable; it builds the chain like the basic attack does.
 - **護體氣罩**: Raises a barrier for 5 seconds that ignores all damage and status effects.
 - **防禦**: Becomes invulnerable and pushes back the enemies in front.
-- **點破雲關**: At chain 8 or more, spends the whole chain and thrusts forward. Damage is the finisher's damage × 0.5 × chain.
+- **點破雲關**: At chain 8 or more, spends the whole chain and thrusts forward. Damage is attack × 0.5 × chain.
 - **雲霄雷霆霹靂刀**: Gathers strength in a crouch, then cuts with the basic attack's third swing while lightning falls on a fan ahead, dealing damage and paralysis. With 動如雷震, targets fall and stay still for 2 seconds.
-- **風雷神腳**: At chain 4 or more, spends the whole chain and charges forward in a flying kick. Damage is the finisher's damage × 0.45 × chain.
+- **風雷神腳**: At chain 4 or more, spends the whole chain and charges forward in a flying kick. Damage is attack × 0.45 × chain.
 - **飛天腳**: Jumps, then slams down.
 - **翻浪刀法**: Cuts ahead and shoves what it hits, marks the nearest of them with a small blue flame, dashes up to it and cuts once more.
-- **鐵臂飛拳**: Strikes a wide lane ahead (5 m long, 3.4 m wide) for 1.5× the finisher's damage, throws what it hits back and knocks it down for 2 seconds (enemies with super armor only take damage; up to 20 targets).
+- **鐵臂飛拳**: Strikes a wide lane ahead (5 m long, 3.4 m wide) for 1.5× attack as damage, throws what it hits back and knocks it down for 2 seconds (enemies with super armor only take damage).
 - **連環飛鏢** · **三花齊放** · **點水飛石** (slot passive skills): not skills you press; their effect applies while they sit in a slot.
   - 連環飛鏢: holding the throw key keeps firing (no lobs). The gap is 0.6 s at 暗器 0 and 0.15 s at 100.
   - 三花齊放: a lobbed throw sends 2 more hidden weapons. It cannot be equipped with 連環飛鏢; picking one takes the other's slot. Both unlock at the top level of 唐門暗器總綱.
@@ -167,7 +167,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 - **毒藥** (the second senior brother): Throws poison vials at his own spot and at random enemies around, leaving poison behind.
 - **全都是我的錢** (the fourth senior brother): Gathers the coins on the field, throws healing potions and a giant shell.
 - **天地無聲勢** (the junior sister): Clones dash into enemies and slash with daggers; she finishes by cutting through.
-- **點破雲關．雷動九天** (葉雲舟): Six horizontal dash slashes with a long sword. With **同舟劍法** learned this skill changes: she and Johwal rush into the middle of the enemies, then 16 area slashes (8 m radius, up to 20 targets) land over 2 seconds. Johwal cannot be hurt meanwhile.
+- **點破雲關．雷動九天** (葉雲舟): Six horizontal dash slashes with a long sword. With **同舟劍法** learned this skill changes: she and Johwal rush into the middle of the enemies, then 16 area slashes (8 m radius) land over 2 seconds. Johwal cannot be hurt meanwhile.
 - **強力攻擊** (龍湘): Drops in and dashes twice at random enemies, slashing.
 - **金錢鏢** (上官螢): Throws coin darts and cuts with a sword.
 - **大鐵鎚, 虎戰車** (夏侯蘭): Throws weapons or summons carts to sweep enemies away.
