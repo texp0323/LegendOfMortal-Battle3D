@@ -10,12 +10,12 @@
 
 ## 安裝（如果已經安裝了模組基礎包 Mod base，請跳過第 1、2 步）
 
-**最新版本：[v0.1.15](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下載 Battle3D_v0.1.15.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.15/Battle3D_v0.1.15.zip)**（約 120 MB）
+**最新版本：[v0.1.16](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下載 Battle3D_v0.1.16.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.16/Battle3D_v0.1.16.zip)**（約 120 MB）
 
 1. 下載 **BepInEx 6**（Unity Mono，`6.0.0-be.692`），解壓到遊戲資料夾（`Mortal.exe` 所在位置）。
    - 在 [BepInEx 構建頁面](https://builds.bepinex.dev/projects/bepinex_be) 下載 `be.692` 的 *Unity Mono, Windows x64*。
 2. 先執行一次遊戲，確認生成了 `BepInEx` 資料夾，然後關閉遊戲。
-3. 點選上方的 **下載 Battle3D_v0.1.15.zip** 獲取安裝包。在[最新發布頁面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，請選擇 **Assets → `Battle3D_v0.1.15.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安裝包。
+3. 點選上方的 **下載 Battle3D_v0.1.16.zip** 獲取安裝包。在[最新發布頁面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，請選擇 **Assets → `Battle3D_v0.1.16.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安裝包。
 4. 解壓下載的 ZIP，把裡面的 `BepInEx` 資料夾 **直接貼上（覆蓋）到遊戲資料夾**。
    結果：`...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 啟動遊戲並進入團戰，即可看到 3D 戰鬥。
@@ -70,11 +70,11 @@
 
 **手把**
 
-操作方式選擇 **Keyboard** 時可同時使用手把（與鍵盤並用）。其他操作方式下手把無效。按鍵名稱以 Xbox 為準；PlayStation 手把的對應位置為 □ ○ × △ 與 L1 R1 L2 R2。
+操作方式選擇 **Keyboard** 時可同時使用手把（與鍵盤並用）。其他操作方式下手把無效。按鍵名稱以 Xbox 為準；PlayStation 手把的對應位置為 □ ○ × △ 與 L1 R1 L2 R2。移動、攻擊、暗器、翻滾、技能與暫停直接使用遊戲內建的手把設定；僅嘴攻（Y）與自動瞄準（按下右搖桿）是模組新增的按鍵。
 
 | 動作 | 按鍵 |
 |---|---|
-| 移動 | 左搖桿 / 十字鍵 |
+| 移動 | 左搖桿 |
 | 攻擊（三連擊） | X |
 | 暗器 | B（長按為拋射） |
 | 翻滾 / 衝刺 | A |

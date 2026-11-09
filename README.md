@@ -10,12 +10,12 @@
 
 ## 설치 (모드 베이스를 이미 설치하셨다면 1, 2번은 건너뛰십시오)
 
-**최신 릴리즈: [v0.1.15](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.15.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.15/Battle3D_v0.1.15.zip)** (약 120 MB)
+**최신 릴리즈: [v0.1.16](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.16.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.16/Battle3D_v0.1.16.zip)** (약 120 MB)
 
 1. **BepInEx 6** (Unity Mono, `6.0.0-be.692`)를 내려받아 게임 폴더(`Mortal.exe`가 있는 폴더)에 압축 해제합니다.
    - [BepInEx 빌드 페이지](https://builds.bepinex.dev/projects/bepinex_be)에서 `be.692` 의 *Unity Mono, Windows x64* 를 내려받습니다.
 2. 게임을 한 번 실행하여 `BepInEx` 폴더가 생성된 것을 확인한 뒤 종료합니다.
-3. 위의 **Battle3D_v0.1.15.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.15.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
+3. 위의 **Battle3D_v0.1.16.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.16.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
 4. 내려받은 ZIP의 압축을 풀고, 안의 `BepInEx` 폴더를 **게임 폴더에 그대로 붙여넣기(덮어쓰기)** 합니다.
    결과: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 게임을 실행하고 단체전에 진입하면 3D 전투가 시작됩니다.
@@ -70,11 +70,11 @@
 
 **게임패드**
 
-조작 방식을 **Keyboard**로 두면 게임패드도 함께 쓸 수 있습니다(키보드와 동시에 사용 가능). 다른 방식에서는 게임패드가 동작하지 않습니다. 버튼 이름은 Xbox 기준이며, PlayStation은 같은 위치의 □ ○ × △, L1 R1 L2 R2입니다.
+조작 방식을 **Keyboard**로 두면 게임패드도 함께 쓸 수 있습니다(키보드와 동시에 사용 가능). 다른 방식에서는 게임패드가 동작하지 않습니다. 버튼 이름은 Xbox 기준이며, PlayStation은 같은 위치의 □ ○ × △, L1 R1 L2 R2입니다. 이동·공격·암기·구르기·스킬·일시정지는 게임이 원래 쓰는 패드 설정을 그대로 읽어 사용하며, 구공(Y)과 자동 조준(오른쪽 스틱 누르기)만 모드가 추가한 버튼입니다.
 
 | 동작 | 버튼 |
 |---|---|
-| 이동 | 왼쪽 스틱 / 방향 패드 |
+| 이동 | 왼쪽 스틱 |
 | 공격 (3연격) | X |
 | 암기 | B (길게 누르면 포물선 포사) |
 | 구르기 / 대시 | A |
