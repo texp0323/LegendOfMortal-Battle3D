@@ -11,12 +11,12 @@ A mod that turns the group battles of Legend of Mortal into newly built 3D fight
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 
-**Latest release: [v0.1.16](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.16.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.16/Battle3D_v0.1.16.zip)** (about 120 MB)
+**Latest release: [v0.1.17](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.17.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.17/Battle3D_v0.1.17.zip)** (about 120 MB)
 
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
    - From the [BepInEx builds page](https://builds.bepinex.dev/projects/bepinex_be) take `be.692`, *Unity Mono, Windows x64*.
 2. Run the game once so the `BepInEx` folder is created, then close it.
-3. Use **Download Battle3D_v0.1.16.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.16.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
+3. Use **Download Battle3D_v0.1.17.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.17.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
 4. Extract the downloaded ZIP, then **paste its `BepInEx` folder over the game folder** (merge / overwrite).
    Result: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. Start the game and enter a group battle: the 3D battle opens.
@@ -25,7 +25,7 @@ To remove it, delete the `BepInEx\plugins\Battle3D` folder. Settings are stored 
 
 ## Controls
 
-There are three control schemes; the default is Mouse. Change it from the keyboard-settings button of the in-battle pause menu.
+There are four control schemes; the default is Mouse. Change it from the keyboard-settings button of the in-battle pause menu.
 
 <details>
 <summary><b>Mouse (default)</b></summary>
@@ -71,7 +71,7 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 
 **Gamepad**
 
-With the **Keyboard** control scheme a gamepad can be used as well (together with the keyboard). The other schemes ignore it. Button names are Xbox's; on a PlayStation pad the same positions are □ ○ × △ and L1 R1 L2 R2. Move, attack, throw, roll, skills and pause use the game's own gamepad layout (read from the game's input settings); only the shout (Y) and auto-aim (press the right stick) are buttons the mod adds.
+Pick the **Gamepad** control scheme to play with a gamepad (the keyboard scheme's keys work too). Pick it from the keyboard-settings button of the pause menu or the ready screen, or in the F4 panel. Button names are Xbox's; on a PlayStation pad the same positions are □ ○ × △ and L1 R1 L2 R2. Move, attack, throw, roll, skills and pause use the game's own gamepad layout (read from the game's input settings); only the shout (Y) and auto-aim (press the right stick) are buttons the mod adds.
 
 | Action | Button |
 |---|---|
@@ -82,9 +82,17 @@ With the **Keyboard** control scheme a gamepad can be used as well (together wit
 | Shout | Y |
 | Skills 1–4 | LB RB LT RT |
 | Auto-aim on / off | Press the right stick |
-| Pause / start the fight | Start (A also starts the fight) |
+| Pause | Start |
 
-The original's menus (skill picking and the like) are used with the mouse and keyboard.
+On the ready screen and in the pause menu the pad stands in for the mouse. On the result screen, A confirms and goes on.
+
+| Action | Button |
+|---|---|
+| Move the cursor | Left stick |
+| Click | A |
+| Right click | B |
+| Scroll (what the cursor is over) | Right stick |
+| Start the fight | Start |
 
 **Common**
 
@@ -159,7 +167,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 - **毒藥** (the second senior brother): Throws poison vials at his own spot and at random enemies around, leaving poison behind.
 - **全都是我的錢** (the fourth senior brother): Gathers the coins on the field, throws healing potions and a giant shell.
 - **天地無聲勢** (the junior sister): Clones dash into enemies and slash with daggers; she finishes by cutting through.
-- **點破雲關．雷動九天** (葉雲舟): Six horizontal dash slashes with a long sword. With **同舟劍法** learned this skill changes: she and Johwal rush into the middle of the enemies and vanish, a storm of 16 area slashes (8 m radius, up to 20 targets) rages there for 2 seconds, and both slide out the way they came. Johwal cannot be controlled and cannot be hurt during it.
+- **點破雲關．雷動九天** (葉雲舟): Six horizontal dash slashes with a long sword. With **同舟劍法** learned this skill changes: she and Johwal rush into the middle of the enemies, then 16 area slashes (8 m radius, up to 20 targets) land over 2 seconds. Johwal cannot be hurt meanwhile.
 - **強力攻擊** (龍湘): Drops in and dashes twice at random enemies, slashing.
 - **金錢鏢** (上官螢): Throws coin darts and cuts with a sword.
 - **大鐵鎚, 虎戰車** (夏侯蘭): Throws weapons or summons carts to sweep enemies away.
@@ -186,7 +194,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 |---|---|---|
 | `[General] Enabled` | `true` | Use the 3D battle at all (off: every battle is the original). Also toggled in the F4 panel. |
 | `[General] ExcludedBattles` | `""` | Battle codes (without `BL_`, comma separated) that stay the original 2D battle; every other battle is 3D. Example: `1000,0001` |
-| `[Controls] Scheme` | `Mouse` | Control scheme: `Mouse` / `ClickMove` / `Keyboard` |
+| `[Controls] Scheme` | `Mouse` | Control scheme: `Mouse` / `ClickMove` / `Keyboard` / `Gamepad` |
 | `[Controls] AutoAim` | `true` | Auto-aim onto enemies (also toggled with Left Ctrl in battle) |
 | `[Controls] SkillRelease` | `false` | Cast a skill when its key is let go (its range is shown while held). Also toggled in the F4 panel. |
 | `[Skills] Slot1Key ~ Slot4Key` | `q, e, r, f` | Keys of skill slots 1–4 (Input System key names) |

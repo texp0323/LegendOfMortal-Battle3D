@@ -10,12 +10,12 @@
 
 ## 설치 (모드 베이스를 이미 설치하셨다면 1, 2번은 건너뛰십시오)
 
-**최신 릴리즈: [v0.1.16](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.16.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.16/Battle3D_v0.1.16.zip)** (약 120 MB)
+**최신 릴리즈: [v0.1.17](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Battle3D_v0.1.17.zip 다운로드](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.17/Battle3D_v0.1.17.zip)** (약 120 MB)
 
 1. **BepInEx 6** (Unity Mono, `6.0.0-be.692`)를 내려받아 게임 폴더(`Mortal.exe`가 있는 폴더)에 압축 해제합니다.
    - [BepInEx 빌드 페이지](https://builds.bepinex.dev/projects/bepinex_be)에서 `be.692` 의 *Unity Mono, Windows x64* 를 내려받습니다.
 2. 게임을 한 번 실행하여 `BepInEx` 폴더가 생성된 것을 확인한 뒤 종료합니다.
-3. 위의 **Battle3D_v0.1.16.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.16.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
+3. 위의 **Battle3D_v0.1.17.zip 다운로드** 링크로 설치 파일을 내려받습니다. [최신 릴리즈 페이지](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)에서는 **Assets → `Battle3D_v0.1.17.zip`**을 선택하십시오. `Source code (zip)`과 `Source code (tar.gz)`는 설치 파일이 아닙니다.
 4. 내려받은 ZIP의 압축을 풀고, 안의 `BepInEx` 폴더를 **게임 폴더에 그대로 붙여넣기(덮어쓰기)** 합니다.
    결과: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 게임을 실행하고 단체전에 진입하면 3D 전투가 시작됩니다.
@@ -24,7 +24,7 @@
 
 ## 조작
 
-조작 방식은 세 가지이며, 기본은 Mouse입니다. 전투 중 일시정지 메뉴의 키보드 설정 버튼에서 바꿀 수 있습니다.
+조작 방식은 네 가지이며, 기본은 Mouse입니다. 전투 중 일시정지 메뉴의 키보드 설정 버튼에서 바꿀 수 있습니다.
 
 <details>
 <summary><b>Mouse (기본)</b></summary>
@@ -70,7 +70,7 @@
 
 **게임패드**
 
-조작 방식을 **Keyboard**로 두면 게임패드도 함께 쓸 수 있습니다(키보드와 동시에 사용 가능). 다른 방식에서는 게임패드가 동작하지 않습니다. 버튼 이름은 Xbox 기준이며, PlayStation은 같은 위치의 □ ○ × △, L1 R1 L2 R2입니다. 이동·공격·암기·구르기·스킬·일시정지는 게임이 원래 쓰는 패드 설정을 그대로 읽어 사용하며, 구공(Y)과 자동 조준(오른쪽 스틱 누르기)만 모드가 추가한 버튼입니다.
+조작 방식을 **Gamepad**로 고르면 게임패드로 조작합니다(키보드 방식의 키도 함께 동작). 일시정지 메뉴·준비 화면의 키보드 설정 버튼이나 F4 패널에서 고릅니다. 버튼 이름은 Xbox 기준이며, PlayStation은 같은 위치의 □ ○ × △, L1 R1 L2 R2입니다. 이동·공격·암기·구르기·스킬·일시정지는 게임이 원래 쓰는 패드 설정을 그대로 읽어 사용하며, 구공(Y)과 자동 조준(오른쪽 스틱 누르기)만 모드가 추가한 버튼입니다.
 
 | 동작 | 버튼 |
 |---|---|
@@ -81,9 +81,17 @@
 | 구공 | Y |
 | 스킬 1~4 | LB RB LT RT |
 | 자동 조준 켜기·끄기 | 오른쪽 스틱 누르기 |
-| 일시정지 / 전투 시작 | Start (전투 시작은 A도 가능) |
+| 일시정지 | Start |
 
-원본 메뉴(스킬 선택 등)는 마우스·키보드로 조작합니다.
+전투 준비 화면과 일시정지 메뉴에서는 패드가 마우스를 대신합니다. 전투 결과 화면은 A로 확인하면 넘어갑니다.
+
+| 동작 | 버튼 |
+|---|---|
+| 커서 이동 | 왼쪽 스틱 |
+| 클릭 | A |
+| 우클릭 | B |
+| 스크롤 (커서가 올라간 곳) | 오른쪽 스틱 |
+| 전투 시작 | Start |
 
 **공통**
 
@@ -156,7 +164,7 @@
 - **이사형**: 독약병을 던져 독을 남깁니다.
 - **사사형**: 필드의 동전을 모아 던지고 회복약을 떨어뜨립니다.
 - **소사매**: 분신들이 적에게 순간 돌진해 단검으로 베고, 마무리로 꿰뚫고 지나갑니다.
-- **엽운주**: 가로로 대시하며 여섯 번 베는 장검 기술입니다. 동주검법을 익히면 이 스킬이 바뀝니다: 엽운주와 함께 적 무리 한가운데로 돌진해 모습을 감추고, 그곳에서 2초 동안 16번의 범위 베기 폭풍(반경 8 m, 최대 20명)을 일으킨 뒤 들어간 반대 방향으로 미끄러지며 나타납니다. 시전 중 조활은 조작할 수 없고 피해를 받지 않습니다.
+- **엽운주**: 가로로 대시하며 여섯 번 베는 장검 기술입니다. 동주검법을 익히면 이 스킬이 바뀝니다: 엽운주와 함께 적 한가운데로 돌진해 2초 동안 16번 범위 베기(반경 8 m, 최대 20명)를 합니다. 시전 중 조활은 무적입니다.
 - **용상**: 하늘에서 내려와 무작위 적에게 두 번 돌진해 벱니다.
 - **상관형**: 금전표를 날리고 장검으로 베어 냅니다.
 - **옥죽**: 무기를 던지거나 수레를 불러 적을 쓸어 냅니다.
@@ -182,7 +190,7 @@
 |---|---|---|
 | `[General] Enabled` | `true` | 3D 전투 사용 여부 (끄면 모든 전투가 원본). F4 패널에서도 켜고 끌 수 있습니다. |
 | `[General] ExcludedBattles` | `""` | 원본 2D 전투로 남길 전투 코드 (`BL_` 제외, 쉼표로 구분). 나머지 전투는 모두 3D입니다. 예: `1000,0001` |
-| `[Controls] Scheme` | `Mouse` | 조작 방식: `Mouse` / `ClickMove` / `Keyboard` |
+| `[Controls] Scheme` | `Mouse` | 조작 방식: `Mouse` / `ClickMove` / `Keyboard` / `Gamepad` |
 | `[Controls] AutoAim` | `true` | 적 자동 조준 (전투 중 왼쪽 Ctrl로도 전환) |
 | `[Controls] SkillRelease` | `false` | 스킬을 키를 뗄 때 사용 (누르는 동안 사거리 표시). F4 패널에서도 전환할 수 있습니다. |
 | `[Skills] Slot1Key ~ Slot4Key` | `q, e, r, f` | 스킬 슬롯 1~4의 키 (Input System 키 이름) |

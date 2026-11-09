@@ -10,12 +10,12 @@
 
 ## 安裝（如果已經安裝了模組基礎包 Mod base，請跳過第 1、2 步）
 
-**最新版本：[v0.1.16](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下載 Battle3D_v0.1.16.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.16/Battle3D_v0.1.16.zip)**（約 120 MB）
+**最新版本：[v0.1.17](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[下載 Battle3D_v0.1.17.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.17/Battle3D_v0.1.17.zip)**（約 120 MB）
 
 1. 下載 **BepInEx 6**（Unity Mono，`6.0.0-be.692`），解壓到遊戲資料夾（`Mortal.exe` 所在位置）。
    - 在 [BepInEx 構建頁面](https://builds.bepinex.dev/projects/bepinex_be) 下載 `be.692` 的 *Unity Mono, Windows x64*。
 2. 先執行一次遊戲，確認生成了 `BepInEx` 資料夾，然後關閉遊戲。
-3. 點選上方的 **下載 Battle3D_v0.1.16.zip** 獲取安裝包。在[最新發布頁面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，請選擇 **Assets → `Battle3D_v0.1.16.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安裝包。
+3. 點選上方的 **下載 Battle3D_v0.1.17.zip** 獲取安裝包。在[最新發布頁面](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)，請選擇 **Assets → `Battle3D_v0.1.17.zip`**。`Source code (zip)` 和 `Source code (tar.gz)` 不是安裝包。
 4. 解壓下載的 ZIP，把裡面的 `BepInEx` 資料夾 **直接貼上（覆蓋）到遊戲資料夾**。
    結果：`...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. 啟動遊戲並進入團戰，即可看到 3D 戰鬥。
@@ -24,7 +24,7 @@
 
 ## 操作
 
-操作方式有三種，預設為 Mouse。可在戰鬥中暫停選單的鍵盤設定按鈕裡切換。
+操作方式有四種，預設為 Mouse。可在戰鬥中暫停選單的鍵盤設定按鈕裡切換。
 
 <details>
 <summary><b>Mouse（預設）</b></summary>
@@ -70,7 +70,7 @@
 
 **手把**
 
-操作方式選擇 **Keyboard** 時可同時使用手把（與鍵盤並用）。其他操作方式下手把無效。按鍵名稱以 Xbox 為準；PlayStation 手把的對應位置為 □ ○ × △ 與 L1 R1 L2 R2。移動、攻擊、暗器、翻滾、技能與暫停直接使用遊戲內建的手把設定；僅嘴攻（Y）與自動瞄準（按下右搖桿）是模組新增的按鍵。
+操作方式選擇 **Gamepad** 時用手把操作（鍵盤方式的按鍵也同時有效）。可在暫停選單或準備介面的鍵盤設定按鈕、或 F4 面板中選擇。按鍵名稱以 Xbox 為準；PlayStation 手把的對應位置為 □ ○ × △ 與 L1 R1 L2 R2。移動、攻擊、暗器、翻滾、技能與暫停直接使用遊戲內建的手把設定；僅嘴攻（Y）與自動瞄準（按下右搖桿）是模組新增的按鍵。
 
 | 動作 | 按鍵 |
 |---|---|
@@ -81,9 +81,17 @@
 | 嘴攻 | Y |
 | 技能 1~4 | LB RB LT RT |
 | 自動瞄準開 / 關 | 按下右搖桿 |
-| 暫停 / 開始戰鬥 | Start（開始戰鬥也可按 A） |
+| 暫停 | Start |
 
-原版選單（選擇技能等）請用滑鼠與鍵盤操作。
+準備介面與暫停選單中，手把代替滑鼠。戰鬥結果介面按 A 確認即可繼續。
+
+| 動作 | 按鍵 |
+|---|---|
+| 移動游標 | 左搖桿 |
+| 點擊 | A |
+| 右鍵 | B |
+| 捲動（游標所在處） | 右搖桿 |
+| 開始戰鬥 | Start |
 
 **通用**
 
@@ -158,7 +166,7 @@
 - **毒藥**（二師兄）：向自身位置與周圍隨機敵人投擲毒藥瓶，留下毒。
 - **全都是我的錢**（四師兄）：聚集場上的銅錢，投出回復藥與巨大炮彈。
 - **天地無聲勢**（小師妹）：分身衝向敵人以匕首斬擊，最後穿身而過。
-- **點破雲關．雷動九天**（葉雲舟）：以長劍橫向衝刺，連斬六次。 習得 **同舟劍法** 後，此技能變為：她與主角一同衝向敵群中央並隱去身形，在那裡掀起持續 2 秒的 16 次範圍斬擊風暴（半徑 8 公尺，最多 20 人），隨後二人沿來時的反方向滑行現身。施放期間主角無法操作且不會受傷。
+- **點破雲關．雷動九天**（葉雲舟）：以長劍橫向衝刺，連斬六次。 習得 **同舟劍法** 後，此技能變為：她與主角一同衝向敵群中央，持續 2 秒進行 16 次範圍斬擊（半徑 8 公尺，最多 20 人）。施放期間主角無敵。
 - **強力攻擊**（龍湘）：從天而降，向隨機敵人衝刺斬擊兩次。
 - **金錢鏢**（上官螢）：擲出金錢鏢並以長劍斬擊。
 - **大鐵鎚、虎戰車**（夏侯蘭）：投擲武器或召喚推車掃蕩敵人。
@@ -185,7 +193,7 @@
 |---|---|---|
 | `[General] Enabled` | `true` | 是否使用 3D 戰鬥（關閉則所有戰鬥為原版）。也可在 F4 面板中開關。 |
 | `[General] ExcludedBattles` | `""` | 保持原版 2D 的戰鬥程式碼（不含 `BL_`，用逗號分隔），其餘戰鬥均為 3D。例：`1000,0001` |
-| `[Controls] Scheme` | `Mouse` | 操作方式：`Mouse` / `ClickMove` / `Keyboard` |
+| `[Controls] Scheme` | `Mouse` | 操作方式：`Mouse` / `ClickMove` / `Keyboard` / `Gamepad` |
 | `[Controls] AutoAim` | `true` | 自動瞄準敵人（戰鬥中也可用左 Ctrl 切換） |
 | `[Controls] SkillRelease` | `false` | 放開技能鍵時施放（按住時顯示範圍）。F4 面板中也可切換。 |
 | `[Skills] Slot1Key ~ Slot4Key` | `q, e, r, f` | 技能欄 1~4 的按鍵（Input System 按鍵名） |
