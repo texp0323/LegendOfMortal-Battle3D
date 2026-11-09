@@ -11,12 +11,12 @@ A mod that turns the group battles of Legend of Mortal into newly built 3D fight
 
 ## Installation (if you already installed the mod base, skip steps 1 and 2)
 
-**Latest release: [v0.1.14](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.14.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.14/Battle3D_v0.1.14.zip)** (about 120 MB)
+**Latest release: [v0.1.15](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest)** · **[Download Battle3D_v0.1.15.zip](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/download/v0.1.15/Battle3D_v0.1.15.zip)** (about 120 MB)
 
 1. Download **BepInEx 6** (Unity Mono, `6.0.0-be.692`) and extract it into the game folder (where `Mortal.exe` is).
    - From the [BepInEx builds page](https://builds.bepinex.dev/projects/bepinex_be) take `be.692`, *Unity Mono, Windows x64*.
 2. Run the game once so the `BepInEx` folder is created, then close it.
-3. Use **Download Battle3D_v0.1.14.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.14.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
+3. Use **Download Battle3D_v0.1.15.zip** above to get the installation package. On the [latest release page](https://github.com/texp0323/LegendOfMortal-Battle3D/releases/latest), choose **Assets → `Battle3D_v0.1.15.zip`**. `Source code (zip)` and `Source code (tar.gz)` are not installation packages.
 4. Extract the downloaded ZIP, then **paste its `BepInEx` folder over the game folder** (merge / overwrite).
    Result: `...\LegendOfMortal\BepInEx\plugins\Battle3D\Battle3D.dll`
 5. Start the game and enter a group battle: the 3D battle opens.
@@ -69,9 +69,27 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 
 </details>
 
+**Gamepad**
+
+With the **Keyboard** control scheme a gamepad can be used as well (together with the keyboard). The other schemes ignore it. Button names are Xbox's; on a PlayStation pad the same positions are □ ○ × △ and L1 R1 L2 R2.
+
+| Action | Button |
+|---|---|
+| Move | Left stick / D-pad |
+| Attack (3-hit combo) | X |
+| Throw | B (hold for a lobbed throw) |
+| Roll / dash | A |
+| Shout | Y |
+| Skills 1–4 | LB RB LT RT |
+| Auto-aim on / off | Press the right stick |
+| Pause / start the fight | Start (A also starts the fight) |
+
+The original's menus (skill picking and the like) are used with the mouse and keyboard.
+
 **Common**
 
 - Auto-aim on / off: Left Ctrl
+- Skills can be cast when the key is let go: turn it on in the F4 panel (or `[Controls] SkillRelease`) and the skill's range is shown on the ground in red while the key is held; off (the default), a skill is cast the moment its key is pressed.
 - Settings panel: F4
 - Hide the controls list: F11
 - Paralysis keeps a unit from moving for 1 second (it can still attack and act), then slows it as before.
@@ -99,6 +117,7 @@ There are three control schemes; the default is Mouse. Change it from the keyboa
 - **風雷神腳**: At chain 4 or more, spends the whole chain and charges forward in a flying kick. Damage is the finisher's damage × 0.45 × chain.
 - **飛天腳**: Jumps, then slams down.
 - **翻浪刀法**: Cuts ahead and shoves what it hits, marks the nearest of them with a small blue flame, dashes up to it and cuts once more.
+- **鐵臂飛拳**: Strikes a wide lane ahead (5 m long, 3.4 m wide) for 1.5× the finisher's damage, throws what it hits back and knocks it down for 2 seconds (enemies with super armor only take damage; up to 20 targets).
 - **連環飛鏢** · **三花齊放** · **點水飛石** (slot passive skills): not skills you press; their effect applies while they sit in a slot.
   - 連環飛鏢: holding the throw key keeps firing (no lobs). The gap is 0.6 s at 暗器 0 and 0.15 s at 100.
   - 三花齊放: a lobbed throw sends 2 more hidden weapons. It cannot be equipped with 連環飛鏢; picking one takes the other's slot. Both unlock at the top level of 唐門暗器總綱.
@@ -111,7 +130,7 @@ Since no place to obtain 風雷神腳 and 飛天腳 in the story has been found,
 <details>
 <summary><b>Passives</b></summary>
 
-Shown at the upper right of the ready screen and gone once the fight starts.
+Shown at the upper right of the ready screen and gone once the fight starts. If the list is long, scroll it with the mouse wheel.
 
 - **颯踏流星劍**: With the chain at 0, the next basic attack deals triple damage.
 - **思想戰**: The fight starts with a chain already built; higher levels start higher.
@@ -121,6 +140,13 @@ Shown at the upper right of the ready screen and gone once the fight starts.
 - **額外暗器**: Every straight throw sends one more hidden weapon.
 - **毒功**: A melee basic attack that hits gives 50% of the poison and paralysis the straight throw would (when the item has such effects).
 - **醫術**: Every 10 seconds in a fight, recovers twice its level in health (14 at level 7).
+- **疾如風**: Run speed +2% per level of 戰術 (tactics).
+- **無影爪**: Crit chance +10 percentage points.
+- **點穴**: A melee hit piles up paralysis equal to 4 × its level.
+- **逐浪訣**: A melee hit has a chance of chain × (3% × level), up to 50%, to break the target's balance.
+- **鐵布衫**: Damage taken falls by level × 0.2% for every 100 of maximum health (up to 25%).
+- **不動如山**: Damage taken falls by 1.5% per level of 戰術. With 鐵布衫 at most 40% in all.
+- **侵掠如火**: Damage dealt rises by 2% per level of 戰術.
 
 </details>
 
@@ -133,7 +159,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 - **毒藥** (the second senior brother): Throws poison vials at his own spot and at random enemies around, leaving poison behind.
 - **全都是我的錢** (the fourth senior brother): Gathers the coins on the field, throws healing potions and a giant shell.
 - **天地無聲勢** (the junior sister): Clones dash into enemies and slash with daggers; she finishes by cutting through.
-- **點破雲關．雷動九天** (葉雲舟): Six horizontal dash slashes with a long sword.
+- **點破雲關．雷動九天** (葉雲舟): Six horizontal dash slashes with a long sword. With **同舟劍法** learned this skill changes: she and Johwal rush into the middle of the enemies and vanish, a storm of 16 area slashes (8 m radius, up to 20 targets) rages there for 2 seconds, and both slide out the way they came. Johwal cannot be controlled and cannot be hurt during it.
 - **強力攻擊** (龍湘): Drops in and dashes twice at random enemies, slashing.
 - **金錢鏢** (上官螢): Throws coin darts and cuts with a sword.
 - **大鐵鎚, 虎戰車** (夏侯蘭): Throws weapons or summons carts to sweep enemies away.
@@ -162,6 +188,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 | `[General] ExcludedBattles` | `""` | Battle codes (without `BL_`, comma separated) that stay the original 2D battle; every other battle is 3D. Example: `1000,0001` |
 | `[Controls] Scheme` | `Mouse` | Control scheme: `Mouse` / `ClickMove` / `Keyboard` |
 | `[Controls] AutoAim` | `true` | Auto-aim onto enemies (also toggled with Left Ctrl in battle) |
+| `[Controls] SkillRelease` | `false` | Cast a skill when its key is let go (its range is shown while held). Also toggled in the F4 panel. |
 | `[Skills] Slot1Key ~ Slot4Key` | `q, e, r, f` | Keys of skill slots 1–4 (Input System key names) |
 | `[Skills] RememberLoadout` | `true` | Keep Johwal's skill slots for the next battles |
 | `[Camera] Pitch` | `35` | Camera pitch (degrees) |
@@ -174,6 +201,7 @@ Techniques of the companions you call by equipping their skill on the ready scre
 | `[Graphics] Outline` | `true` | Outline of characters and weapons |
 | `[Sound] CustomVolume` | `1` | Volume (0–1) of the mod's own sound effects (Audio folder) |
 | `[Sound] BasicSwingVolume` | `0.7` | Extra volume factor (0–1) for the swing sound of Johwal's basic attacks |
+| `[Diagnostics] DevelopmentMode` | `false` | For development only. On: writes frame-time and memory records to `BepInEx\Battle3D_Performance` (keep it off). |
 
 </details>
 
